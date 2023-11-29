@@ -16,7 +16,7 @@ a{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url('https://fastdo.vn/wp-content/uploads/2022/08/phan-mem-quan-ly-ban-hang-01.jpg');
+	background-image: url('file:///D:/quanlybanhang/coffe-bar-club-v1/html/biwicom/image/bg.jpg');
 	background-size: cover;
 	text-align: center;
 }
@@ -91,21 +91,26 @@ a{
 	box-sizing: border-box;
 	border-bottom: 1px solid #D1D1D1;
 	margin-bottom: 20px;
+	position: relative;
 }
 .outline-input i{
 	color: #4D5258;
-	font-size: 15px;
+	font-size: 16px;
+	position: absolute;
+	top:14px;
 }
 .form-login-input input{
-	width: 90%;
+	width: 100%;
 	border: none;
-	padding:10px 10px 10px 15px;
+	height: 44px;
 	box-sizing: border-box;
 	background-color: #F5F5F5;
 	outline: none;
+	line-height: 44px;
+	padding-left: 30px;
 }
-.outline-input:active{
-/*	border-bottom: 2px solid #0066cc;*/
+.outline-input input:focus{
+	border-bottom: 2px solid #0066cc;
 }
 .outline-input-end{
 	margin-bottom: 0px;
@@ -213,7 +218,7 @@ a{
 .list-language li span{
 	font-size: 12px;
 }
-.list-language li:before{
+/*.list-language li:before{
 	content: " ";
 	width: 16px;
 	height: 16px;
@@ -221,4 +226,4 @@ a{
 	background-repeat: no-repeat;
 	background-image: url(https://cdn-app.kiotviet.vn/retailler/Content/flag-vn.png);
 }
-
+*/

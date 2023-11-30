@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Biwicom-Quản lý bán hàng</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/main.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+	<div class="screen-login">
+		<div class="modal"></div>
+		<div class="about-login">
+			<div class="form-login">
+				<div class="form-login-image">
+					<img src="image/logobiwicom.png">
+				</div>
+				<div class="form-login-type">
+					<p>Bar-Cafe, Nhà hàng, Karaoke - Billiads</p>
+				</div>
+				<div class="form-login-input">
+					<form method="post" action="#" enctype="multipart/form-data">
+						<div class="outline-input">
+							<span><i class="fa-solid fa-store"></i></span>
+							<input type="text" name="name_booth" id="name_booth" placeholder="Tên gian hàng">
+						</div>
+						<div class="outline-input">
+							<span><i class="fa-solid fa-user"></i></span>
+							<input type="text" name="user_name" id="user_name" placeholder="Tên đăng nhập">
+						</div>
+						<div class="outline-input outline-input-end">
+							<span><i class="fa-solid fa-lock"></i></span>
+							<input type="text" name="pass" id="pass" placeholder="Mật khẩu">
+						</div>
+					</form>
+				</div>
+				<div class="lose_pass">
+					<a href="#" class="link_lose_pass">Quên mật khẩu?</a>
+				</div>
+				<div class="option-button">
+					<button class="option-button-manage"><i class="fa-solid fa-list-check"></i>Quản lý</button>
+					<button class="option-button-sale"><i class="fa-solid fa-cart-shopping"></i>Bán hàng</button>
+				</div>
+			</div>
+		</div>
+		<div class="login-bottom">
+			<div class="about-login-bottom">
+				<div class="option-login-bottom">
+					<span><i class="fa-solid fa-phone"></i>0988.777.666</span>
+				</div>
+				<div class="option-login-bottom option-login-bottom-language">
+					<span onclick="language_option()"><i class="icon-image icon-image--vi"></i>Tiếng việt<i class="fas fa-caret-down language-down"></i></span>
+					<div class="option-language" id="option-language">
+						<ul class="list-language none-style">
+							<li><span>Tiếng Việt</span><i class="fa-solid fa-heart"></i></li>
+							<li><span>Tiếng Anh</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

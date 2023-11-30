@@ -1,0 +1,229 @@
+*{
+	font-family: 'Montserrat';
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+}
+.none-style li{
+	list-style: none;
+}
+/*Màn hình login*/
+.screen-login{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url('file:///D:/quanlybanhang/coffe-bar-club-v1/html/biwicom/image/bg.jpg');
+	background-size: cover;
+	text-align: center;
+}
+.modal{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+}
+.login-bottom{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	z-index: 3;
+	bottom: 20px;
+}
+.about-login-bottom{
+	width: 254px;
+	border-radius: 25px;
+	padding: 10px;
+	height: 20px;
+	background-color: rgba(0,0,0,0.6);
+	margin: auto;
+}
+.about-login{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: 2;
+	top: 20%;
+}
+.form-login{
+	width: 440px;
+	height: 405px;
+	background-color: #F5F5F5;
+	border-radius: 17px;
+	margin: auto;
+}
+.form-login-image{
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+	box-sizing: border-box;
+	padding-bottom: 10px;
+}
+.form-login-image img{
+	width: 40%;
+	height: auto;
+}
+.form-login-type{
+	width: 100%;
+	text-align: center;
+}
+.form-login-type p{
+	display: inline-table;
+	padding: 5px 15px;
+	background-color: #E0ECF9;
+	border-radius: 10px;
+	font-size: 13px;
+	color: #0066CC;
+	font-weight: bold;
+}
+.form-login-input{
+	width: 100%;
+	text-align: left;
+	padding:20px;
+	box-sizing: border-box;
+}
+
+.outline-input{
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	border-bottom: 1px solid #D1D1D1;
+	margin-bottom: 20px;
+	position: relative;
+}
+.outline-input i{
+	color: #4D5258;
+	font-size: 16px;
+	position: absolute;
+	top:14px;
+}
+.form-login-input input{
+	width: 100%;
+	border: none;
+	height: 44px;
+	box-sizing: border-box;
+	background-color: #F5F5F5;
+	outline: none;
+	line-height: 44px;
+	padding-left: 30px;
+}
+.outline-input input:focus{
+	border-bottom: 2px solid #0066cc;
+}
+.outline-input-end{
+	margin-bottom: 0px;
+}
+
+.lose_pass{
+	width: 100%;
+	text-align: right;
+	padding-right: 20px;
+	box-sizing: border-box;
+	font-size: 15px;
+	font-weight: bold;
+	font-style: italic;
+}
+.link_lose_pass:hover{
+	color: #F6422E;
+}
+.option-button{
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-top:25px;
+}
+.option-button i{
+	margin-right: 5px;
+}
+.option-button button{
+	width: 45%;
+	font-size: 14px;
+	border-radius: 12px;
+	line-height: 20px;
+	padding: 11px 20px;
+	color: white;
+	border: none;
+	outline: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+.option-button-manage{
+	margin-right: 8px;
+	background-color: #06c;
+}
+.option-button button:hover{
+	background-color: rgba(0, 0, 0, .5);
+}
+.option-button-sale{
+	background-color: #4bac4d;
+}
+
+.about-login-bottom{
+	display: flex;
+}
+.option-login-bottom{
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	width: 50%;
+	box-sizing: border-box;
+}
+.option-login-bottom span{
+	font-size: 14px;
+}
+.option-login-bottom i{
+	margin-right: 5px;
+}
+.option-login-bottom-language .language-down{
+	margin-left: 10px;
+}
+.option-login-bottom-language{
+	position: relative;
+}
+
+.option-language{
+	position: absolute;
+	width: 130px;
+	height: 105px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	top: -118px;
+	display: none;
+}
+.list-language{
+	box-sizing: border-box;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.list-language li{
+	color: #252525;
+	text-align: left;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+.list-language li:hover{
+	color: green;
+}
+.list-language li i{
+	font-size: 12px;
+	color: #AA0000;
+	margin-left: 10px;
+}
+.list-language li span{
+	font-size: 12px;
+}
+/*.list-language li:before{
+	content: " ";
+	width: 16px;
+	height: 16px;
+	display: block;
+	background-repeat: no-repeat;
+	background-image: url(https://cdn-app.kiotviet.vn/retailler/Content/flag-vn.png);
+}
+*/

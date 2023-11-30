@@ -11,3 +11,11 @@ function language_option(){
 	}
 	
 }
+function load_form_forget(){
+	document.getElementById("form-login").style.display = "none";
+	document.getElementById("forger-pw").style.display = "block";
+}
+function return_form_login(){
+	document.getElementById("forger-pw").style.display = "none";
+	document.getElementById("form-login").style.display = "block";
+}

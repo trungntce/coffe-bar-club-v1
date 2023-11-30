@@ -9,6 +9,10 @@ a{
 .none-style li{
 	list-style: none;
 }
+.style-inline li{
+	display: inline-table;
+	position: relative;
+}
 /*Màn hình login*/
 .screen-login{
 	position: fixed;
@@ -16,7 +20,7 @@ a{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url('file:///D:/quanlybanhang/coffe-bar-club-v1/html/biwicom/image/bg.jpg');
+	background-image: url('file:///D:/quanlybanhang/coffe-bar-club-v1/html/biwicom/image/background.png');
 	background-size: cover;
 	text-align: center;
 }
@@ -49,7 +53,7 @@ a{
 }
 .form-login{
 	width: 440px;
-	height: 405px;
+	height: 440px;
 	background-color: #F5F5F5;
 	border-radius: 17px;
 	margin: auto;
@@ -82,6 +86,7 @@ a{
 	width: 100%;
 	text-align: left;
 	padding:20px;
+	padding-bottom: 10px;
 	box-sizing: border-box;
 }
 
@@ -99,7 +104,24 @@ a{
 	position: absolute;
 	top:14px;
 }
-.form-login-input input{
+.notify-login{
+	width: 100%;
+	padding: 0px 20px 5px 20px;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	min-height: 30px;
+}
+.notify-together p{
+	padding: 7px 0px 7px 0px;
+	border-radius: 10px;
+	border: 1px solid red;
+	background-color: #FDEBED;
+	color: #CC0000;
+}
+.notify-together p i{
+	margin-right: 5px;
+}
+.outline-input input{
 	width: 100%;
 	border: none;
 	height: 44px;
@@ -183,6 +205,9 @@ a{
 .option-login-bottom-language{
 	position: relative;
 }
+.option-login-bottom>span{
+	display: flex;
+}
 
 .option-language{
 	position: absolute;
@@ -197,33 +222,78 @@ a{
 .list-language{
 	box-sizing: border-box;
 	padding-top: 10px;
-	padding-left: 10px;
+	padding-left: 2px;
 }
 .list-language li{
 	color: #252525;
 	text-align: left;
 	font-weight: bold;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	box-sizing: border-box;
+	display: flex;
 }
 .list-language li:hover{
 	color: green;
 }
 .list-language li i{
-	font-size: 12px;
 	color: #AA0000;
 	margin-left: 10px;
 }
 .list-language li span{
 	font-size: 12px;
 }
-/*.list-language li:before{
-	content: " ";
+.image-vi{
+	content: "";
 	width: 16px;
 	height: 16px;
 	display: block;
-	background-repeat: no-repeat;
-	background-image: url(https://cdn-app.kiotviet.vn/retailler/Content/flag-vn.png);
+	background-image: url('file:///D:/quanlybanhang/coffe-bar-club-v1/html/biwicom/image/iconvietnam.png');
 }
-*/
+.image-uk{
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: block;
+	background-image: url('file:///D:/quanlybanhang/coffe-bar-club-v1/html/biwicom/image/iconanhquoc.png');
+}
+
+
+
+/*forget-password*/
+.forget-password{
+	width: 440px;
+	height: auto;
+	padding-bottom: 20px;
+	background-color: #F5F5F5;
+	border-radius: 17px;
+	margin: auto;
+}
+.title-forget-pass{
+	padding-top: 30px;
+	box-sizing: border-box;
+}
+.form-forget-pw{
+	width: 100%;
+	text-align: left;
+	padding:20px;
+	padding-bottom: 10px;
+	box-sizing: border-box;
+}
+.option-button-forget{
+	margin-top: 10px;
+}
+.store-not-exists{
+	width: 100%;
+	padding: 20px 20px 5px 20px;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	min-height: 30px;
+	display: none;
+}
+.about-forget-pw{
+	display: none;
+}
+
+
+

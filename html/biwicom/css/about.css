@@ -1,0 +1,147 @@
+.header{
+	width: 100%;
+	height: auto;
+	background-color: #FFFFFF;
+}
+.header-bottom{
+	width: 100%;
+	height: auto;
+	background-color: #0066CC;
+}
+.top-bar{
+	width: 85%;
+	min-height: 55px;
+	margin: auto;
+	display: flex;
+	box-sizing: border-box;
+}
+.top-bar-logo{
+	width: 20%;
+	padding-top: 5px;
+	box-sizing: border-box;
+}
+.top-bar-logo img{
+	width: 70%;
+	margin-top: 5px;
+}
+.top-bar-menu{
+	width: 80%;
+	box-sizing: border-box;
+}
+.nav-top-bar-menu{
+	text-align: right;
+	padding: 0px;
+}
+.nav-top-bar-menu li{
+	line-height: 50px;
+	padding: 0px 15px 0px 15px;
+}
+.nav-top-bar-menu li a{
+	color: #666666;
+}
+.nav-top-bar-menu>li:hover>a{
+	color: #0066CC;
+	font-weight: bold;
+}
+.nav-top-bar-menu li i{
+	margin-right: 5px;
+}
+.nav-top-bar-menu>li:hover .sub-menu-top{
+	display: block;
+}
+.sub-menu-top{
+	position: absolute;
+	width: 250px;
+	height: auto;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	z-index: 2;
+	right: 0px;
+	top: 40px;
+	border-radius: 7px;
+	padding: 0px;
+	display: none;
+}
+.sub-menu-top li i{
+	margin-right: 15px;
+}
+.sub-menu-top li{
+	display: block;
+	text-align: left;
+	color: #252525;
+	padding: 10px 0px 10px 15px;
+	line-height: 30px;
+}
+.sub-menu-top li:hover{
+	background-color:rgba(192,192,192,0.5);
+	font-weight: bold;
+}
+.sub-menu-top li a{
+	color: #252525;
+}
+/*Menu*/
+.header-menu{
+	width: 85%;
+	min-height: 40px;
+	margin: auto;
+	display: flex;
+}
+.header-menu-left{
+	width: 70%;
+	box-sizing: border-box;
+}
+.list-header-menu li{
+	line-height: 40px;
+	font-size: 15px;
+}
+.about-link-list{
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+.list-header-menu>li:hover .about-link-list{
+	background-color:rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	font-weight: bold;
+}
+.list-header-menu li a{
+	color: #E0ECF9;
+}
+.list-header-menu li a>i{
+	margin-right:10px;
+}
+.list-header-menu li:hover .sub-menu{
+	display: block;
+}
+.sub-menu{
+	position: absolute;
+	width: 300px;
+	height: auto;
+	background-color: red;
+	left: 0;
+	background-color: #0066CC;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	display: none;
+	z-index: 1;
+}
+.sub-menu li{
+	padding: 5px 0px 5px 20px;
+	display: block;
+}
+.sub-menu li:hover{
+	background-color:rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+}
+.header-menu-right{
+	width: 30%;
+	box-sizing: border-box;
+}
+.header-menu-right ul{
+	text-align: right;
+}
+.nav-menu-right li:first-child{
+	background-color:rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+}

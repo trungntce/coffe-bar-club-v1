@@ -1,5 +1,14 @@
 
 /*screen login*/
+.header-menu-mobile{
+  display: none;
+}
+.menu-mobile{
+    display: none;
+}
+.option-mobile-user{
+  display: none;
+}
 @media only screen and (max-width: 500px) {
   .about-login{
   	padding-left: 5px;
@@ -35,11 +44,18 @@
 }
 
 /*screen login*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1024px) {
   .header{
     display: none;
   }
   .header-bottom{
     display: none;
   }
+  .header-menu-mobile{
+    width: 100%;
+    min-height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+  }
+  
 }

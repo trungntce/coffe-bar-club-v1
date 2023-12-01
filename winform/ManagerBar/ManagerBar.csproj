@@ -75,6 +75,18 @@
     <Compile Include="frm_OverView.Designer.cs">
       <DependentUpon>frm_OverView.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Products.Designer.cs">
+      <DependentUpon>frm_Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_testform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_testform.Designer.cs">
+      <DependentUpon>frm_testform.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_ForgotPassword.resx">
@@ -88,6 +100,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_OverView.resx">
       <DependentUpon>frm_OverView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Products.resx">
+      <DependentUpon>frm_Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_testform.resx">
+      <DependentUpon>frm_testform.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -318,6 +336,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\file %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cube-variant-with-shadow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tags.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reply-all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vehicle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reply-all1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inbox1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vehicle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

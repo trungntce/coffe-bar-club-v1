@@ -1,0 +1,81 @@
+.page-left{
+	width: 20%;
+	height: auto;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.page-right{
+	width: 80%;
+	height: auto;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.about-filter-option{
+	width: 100%;
+	height: auto;
+	padding: 10px 5px 20px 15px;
+	box-sizing: border-box;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 5px;
+	margin-bottom:30px;
+}
+.search-page-input{
+	width: 100%;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid green;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.search-pages{
+	margin-bottom: 15px;
+}
+.about-filter-option-top{
+	margin-bottom: 15px;
+}
+.about-filter-option-top .top-title{
+	font-weight: bold;
+}
+.about-filter-option-top .top-icon{
+	float: right;
+	margin-right: 10px;
+	cursor: pointer;
+	clear: both;
+}
+.list-check .check-box{
+	margin-right: 10px;
+}
+.list-check-item{
+	margin-bottom: 10px;
+}
+.total-record select{
+	border: none;
+	outline: none;
+	border-bottom: 2px solid green;
+	margin-left: 20px;
+}
+
+.page-right-top{
+	width: 100%;
+	display: flex;
+}
+.title-page-right{
+	display: inline-table;
+	font-size: 18px;
+}
+.option-top{
+	width: 90%;
+	text-align: right;
+}
+.detail-option-top{
+	padding: 10px 15px 10px 15px;
+	background-color: #4BAC4D;
+	color: white;
+	border-radius: 5px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+.detail-option-top span{
+	margin-right: 5px;
+	font-weight: bold;
+}

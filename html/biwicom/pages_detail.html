@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/about.css">
 	<link rel="stylesheet" type="text/css" href="css/css-mobile.css">
 	<link rel="stylesheet" type="text/css" href="css/content.css">
+	<link rel="stylesheet" type="text/css" href="css/page_details.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<script src="js/main.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
@@ -246,110 +247,126 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 	</div>
 	<div class="content">
 		<div class="content-container">
-			<div class="content-left">
-				<div class="sale-today">
-					<h3 class="sale-today-title">Kết quả bán hàng hôm nay</h3>
-					<div class="sale-today-index">
-						<ul class="list-sale-today-index">
-							<li>
-							<label>
-								<i class="fa-solid fa-comments-dollar blue"></i>
-							</label>
-							<div class="list-sale-today-index-detail">
-								<span>0 đơn đã xong</span><br>
-								<span>Hôm qua 0</span>
-							</div>
-								
-							</li>
-							<li>
-							<label>
-								<i class="fa-solid fa-book-open green"></i>
-							</label>
-							<div class="list-sale-today-index-detail">
-								<span>2 đơn đang phục vụ</span><br>
-								<span>Hôm qua 0</span>
-							</div>
-								
-							</li>
-							<li>
-							<label>
-								<i class="fa-solid fa-users blue"></i>
-							</label>
-							<div class="list-sale-today-index-detail">
-								<span>Khách hàng</span><br>
-								<span>Hôm qua 0</span>
-							</div>
-								
-							</li>
-						</ul>
+			<div class="page-left">
+				<div class="about-filter-option">
+					<h4 class="search-pages">Tìm kiếm</h4>
+					<input class="search-page-input" type="text" name="" placeholder="Theo mã hàng, tên riêng">
+				</div>
+				<div class="about-filter-option">
+					<div class="about-filter-option-top">
+						<span class="top-title">Loại thực đơn</span>
+						<span class="top-icon"><i class="fa-solid fa-caret-down"></i></span>
+					</div>
+					<div class="list-check">
+						<div class="list-check-item">
+							<input class="check-box" type="checkbox" name=""><span>Đồ ăn</span>
+						</div>
+						<div class="list-check-item">
+							<input class="check-box" type="checkbox" name=""><span>Đồ uống</span>
+						</div>
+						<div class="list-check-item">
+							<input class="check-box" type="checkbox" name=""><span>Khác</span>
+						</div>
 					</div>
 				</div>
-				<div class="sale-today">
-					<h3 class="title_inline">Doanh số hôm nay</h3>
-					<i class="fa-solid fa-arrow-right about-icon"></i>
-					<span class="quantity">1</span>
-					<div class="filter-date">
-						<select>
-							<option>Hôm nay</option>
-							<option>Hôm qua</option>
-							<option>Tháng này</option>
-							<option>Tháng trước</option>
-						</select>
+				<div class="about-filter-option">
+					<div class="about-filter-option-top">
+						<span class="top-title">Loại hàng</span>
+						<span class="top-icon"><i class="fa-solid fa-caret-down"></i></span>
 					</div>
-					<div class="chart">
-						<canvas id="chart_sale_today" style="width:100%;"></canvas>
-					</div>
-				</div>
-				<div class="sale-today">
-					<h3 class="title_inline">Số lượng khách hôm nay</h3>
-					<i class="fa-solid fa-arrow-right about-icon"></i>
-					<span class="quantity">2</span>
-					<div class="filter-date">
-						<select>
-							<option value="1">7 ngày qua</option>
-							<option value="2">Tháng này</option>
-							<option value="3">Hôm nay</option>
-							<option value="4">Hôm qua</option>
-						</select>
-					</div>
-					<div class="chart">
-						<canvas id="chart_customer" style="width:100%;"></canvas>
+					<div class="list-check">
+						<div class="list-check-item">
+							<input class="check-box" type="checkbox" name=""><span>Hàng hóa thường</span>
+						</div>
+						<div class="list-check-item">
+							<input class="check-box" type="checkbox" name=""><span>Chế biến</span>
+						</div>
+						<div class="list-check-item">
+							<input class="check-box" type="checkbox" name=""><span>Dịch vụ</span>
+						</div>
+						<div class="list-check-item">
+							<input class="check-box" type="checkbox" name=""><span>Combo - Đóng gói</span>
+						</div>
 					</div>
 				</div>
-				<div class="sale-today change_top_ten">
-					<h3 class="title_inline">TOP 10 hàng hóa bán chạy hôm qua</h3>
-					<select class="option-sale">
-						<option>Theo doanh thu</option>
-						<option>Theo số lượng</option>
+				<div class="about-filter-option">
+					<h4 class="search-pages">Nhóm hàng</h4>
+					<input class="search-page-input" type="text" name="" placeholder="Theo mã hàng, tên riêng">
+				</div>
+				<div class="about-filter-option">
+					<div class="about-filter-option-top">
+						<span class="top-title">Tồn kho</span>
+						<span class="top-icon"><i class="fa-solid fa-caret-down"></i></span>
+					</div>
+					<div class="list-check">
+						<div class="list-check-item">
+							<input class="check-box" type="radio" name=""><span>Tất cả</span>
+						</div>
+						<div class="list-check-item">
+							<input class="check-box" type="radio" name=""><span>Dưới định mức tồn</span>
+						</div>
+						<div class="list-check-item">
+							<input class="check-box" type="radio" name=""><span>Vượt định mức tồn</span>
+						</div>
+						<div class="list-check-item">
+							<input class="check-box" type="radio" name=""><span>Còn hàng trong kho</span>
+						</div>
+						<div class="list-check-item">
+							<input class="check-box" type="radio" name=""><span>Hết hàng trong kho</span>
+						</div>
+					</div>
+				</div>
+				<div class="about-filter-option">
+					<h4 class="search-pages">Vị trí</h4>
+					<input class="search-page-input" type="text" name="" placeholder="Chọn vị trí">
+				</div>
+				<div class="about-filter-option">
+					<div class="about-filter-option-top">
+						<span class="top-title">Lựa chọn hiển thị</span>
+						<span class="top-icon"><i class="fa-solid fa-caret-down"></i></span>
+					</div>
+					<div class="list-check">
+						<div class="list-check-item">
+							<input class="check-box" type="radio" name=""><span>Hàng đang kinh doanh</span>
+						</div>
+						<div class="list-check-item">
+							<input class="check-box" type="radio" name=""><span>Hàng ngừng kinh doanh</span>
+						</div>
+						<div class="list-check-item">
+							<input class="check-box" type="radio" name=""><span>Tất cả</span>
+						</div>
+					</div>
+				</div>
+				<div class="total-record">
+					<span>Số bản ghi:</span>
+					<select>
+						<option>15</option>
+						<option>20</option>
 					</select>
-					<div class="filter-date">
-						<select>
-							<option value="1">7 ngày qua</option>
-							<option value="2">Tháng này</option>
-							<option value="3">Hôm nay</option>
-							<option value="4">Hôm qua</option>
-						</select>
-					</div>
-					<div class="chart">
-						<canvas id="top_ten" style="width:100%;"></canvas>
-					</div>
 				</div>
 			</div>
-			<div class="content-right">
-				<div class="adsense partner-adsense">
-					<img src="image/ads.png">
-				</div>
-				<div class="action-last">
-					<div class="action-last-text">
-						<h4>Các hoạt động gần đây</h4>
-						<ul class="list_notice">
-							<li><i class="fa-brands fa-sellsy blue"></i><a href="">xhieeu</a> vừa <a href="#">bán đơn hàng</a> trị giá của nó là 0đ</li>
-							<li><i class="fa-brands fa-sellsy green"></i><a href="">xhieeu</a> vừa <a href="#">kiểm hàng</a> trị giá của nó là 0đ</li>
-							<li><i class="fa-brands fa-sellsy green"></i><a href="">xhieeu</a> vừa <a href="#">bán đơn hàng</a> trị giá của nó là 0đ</li>
-							<li><i class="fa-brands fa-sellsy blue"></i><a href="">xhieeu</a> vừa <a href="#">bán đơn hàng</a> trị giá của nó là 0đ</li>
-							<li><i class="fa-brands fa-sellsy green"></i><a href="">xhieeu</a> vừa <a href="#">bán đơn hàng</a> trị giá của nó là 0đ</li>
-							<li><i class="fa-brands fa-sellsy blue"></i><a href="">xhieeu</a> vừa <a href="#">bán đơn hàng</a> trị giá của nó là 0đ</li>
-						</ul>
+			<div class="page-right">
+				<div class="page-right-top">
+					<h2 class="title-page-right">Hàng hóa</h2>
+					<div class="option-top">
+						<span class="detail-option-top">
+							<span><i class="fa-solid fa-plus"></i></span>
+							<span>Thêm mới</span>
+							<span><i class="fa-solid fa-caret-down"></i></span>
+						</span>
+						<span class="detail-option-top">
+							<span><i class="fa-solid fa-file-import"></i></span>
+							<span>Import</span>
+						</span>
+						<span class="detail-option-top">
+							<span><i class="fa-solid fa-file-import"></i></span>
+							<span>Xuất File</span>
+						</span>
+						<span class="detail-option-top">
+							<span><i class="fa-solid fa-bars"></i></span>
+							<span><i class="fa-solid fa-caret-down"></i></span>
+						</span>
+						
 					</div>
 				</div>
 			</div>

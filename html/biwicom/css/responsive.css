@@ -1,5 +1,14 @@
 
 /*screen login*/
+.header-menu-mobile{
+  display: none;
+}
+.menu-mobile{
+    display: none;
+}
+.option-mobile-user{
+  display: none;
+}
 @media only screen and (max-width: 500px) {
   .about-login{
   	padding-left: 5px;
@@ -11,6 +20,25 @@
   }
   .forget-password{
   	width: 350px;
+  }
+  .branch-mobile>span{
+    font-size: 12px;
+  }
+  .branch-mobile>span>i{
+    display: none;
+  }
+  .title_inline{
+    font-size: 10px;
+  }
+  .filter-date select{
+    font-size: 12px;
+  }
+  .option-sale{
+    font-size: 12px;
+  }
+  .change_top_ten{
+    padding-top: 40px;
+    box-sizing: border-box;
   }
 }
 /*responsive header*/
@@ -35,11 +63,42 @@
 }
 
 /*screen login*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1024px) {
   .header{
     display: none;
   }
   .header-bottom{
     display: none;
+  }
+  .header-menu-mobile{
+    width: 100%;
+    min-height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+  }
+  .content-container{
+    display: block;
+  }
+  .content-left{
+    width: 100%;
+    padding-right: 10px;
+  }
+  .content-right{
+    width: 100%;
+  }
+  .partner-adsense{
+    display: none;
+  }
+  .action-last{
+    padding-left: 0px;
+  }
+  .list-sale-today-index{
+    display: block;
+  }
+  .list-sale-today-index li{
+      list-style: none;
+      display: flex;
+      padding: 20px 0px 10px 10px;
+      border-right: 1px solid #DDDD;
   }
 }

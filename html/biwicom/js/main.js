@@ -19,3 +19,30 @@ function return_form_login(){
 	document.getElementById("forger-pw").style.display = "none";
 	document.getElementById("form-login").style.display = "block";
 }
+function load_menu_mobile(){
+	document.getElementById("header-menu-mobile").style.display = "block";
+}
+function close_menu_mobile(){
+	document.getElementById("header-menu-mobile").style.display = "none"; 
+}
+function load_user_mobile(){
+	document.getElementById("header-user-mobile").style.display = "block";
+}
+function close_user_mobile(){
+	document.getElementById("header-user-mobile").style.display = "none";
+}
+var check_form_branch = false;
+function load_form_branch(){
+	if (check_form_branch) {
+		document.getElementById("form-branch").style.display = "none";
+		check_form_branch = false;
+	}
+	else{
+		document.getElementById("form-branch").style.display = "block";
+		check_form_branch=true;
+	}
+	
+}
+
+
+

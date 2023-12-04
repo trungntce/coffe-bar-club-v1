@@ -16,6 +16,9 @@
 	text-align: center;
 	display: flex;
 }
+.logo-menu a{
+	margin: auto;
+}
 .logo-menu img{
 	width: 150px;
 	height: auto;
@@ -26,6 +29,7 @@
 	box-sizing: border-box;
 	line-height: 50px;
 	text-align: right;
+	position: relative;
 }
 .about-icon-menu span{
 	color:#666666;
@@ -40,6 +44,7 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
+	z-index: 99;
 }
 
 .arrow-left{
@@ -125,6 +130,8 @@
 	right: 0;
 	padding-top: 30px;
 	box-sizing: border-box;
+	animation-name: open_menu_mb;
+    animation-duration: 1s;
 }
 .arrow-right{
 	width: 100px;
@@ -154,4 +161,57 @@
 
 .none-sub .sub-menu-mobile{
 	display: none;
+}
+
+.branch-mobile{
+	width: 200%;
+	padding: 10px 10px 10px 5px;
+	box-sizing: border-box;
+	position: absolute;
+	background-color: white;
+	top: 45px;
+	right: 40px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	text-align: left;
+	border-radius: 10px;
+	display: none;
+	animation-name: open_branch;
+    animation-duration: 1s;
+    z-index: 100;
+}
+.branch-mobile-input{
+	position: relative;
+}
+.branch-mobile-input input{
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid green;
+	outline: none;
+	padding:5px;
+	box-sizing: border-box;
+}
+.branch-mobile-input i{
+	position: absolute;
+	top: 18px;
+	right: 5px;
+	z-index: 3;
+	color: #C0C0C0;
+}
+.branch-mobile>span{
+	color: #252525;
+	font-weight: bold;
+	padding-left: 10px;
+	box-sizing: border-box;
+} 
+.branch-mobile>span>i{
+	color: green;
+	margin-left: 30%;
+}
+@keyframes open_branch {
+	from{
+		top: 0px;
+	}
+	to{
+		top:45px;
+	}
 }

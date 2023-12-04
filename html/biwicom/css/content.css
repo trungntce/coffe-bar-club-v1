@@ -1,0 +1,158 @@
+.content{
+	width: 100%;
+	height: auto;
+	padding-bottom: 50px;
+}
+.content-container{
+	width: 85%;
+	margin: auto;
+	height: auto;
+	padding-top: 20px;
+	box-sizing: border-box;
+	display: flex;
+}
+.content-left{
+	width: 76%;
+	height: auto;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.content-right{
+	width: 24%;
+	height: auto;
+	box-sizing: border-box;
+}
+.sale-today{
+	width: 100%;
+	height: auto;
+	padding: 20px 10px 20px 10px;
+	box-sizing: border-box;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.adsense{
+	width: 100%;
+	height: auto;
+	padding: 0px 10px 10px 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.adsense img{
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.action-last{
+	width: 100%;
+	height: auto;
+	padding: 0px 10px 10px 10px;
+	box-sizing: border-box;
+	margin-top: 30px;
+}
+.action-last-text{
+	border-radius: 7px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	box-sizing: border-box;
+}
+.action-last-text h4{
+	padding-left: 10px;
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: 10px;
+}
+.list_notice{
+	padding-top: 10px;
+	box-sizing: border-box;
+	max-height: 800px;
+	overflow-y: scroll;
+}
+.list_notice li{
+	list-style: none;
+	padding:10px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #DDDD;
+	line-height: 25px;
+}
+.list_notice li i{
+	font-size: 20px;
+	margin-right: 10px;
+}
+.list_notice li .blue{
+	color: #0099FF;
+}
+.list_notice li .green{
+	color: 	#33CC00;
+}
+.sale-today-index{
+	margin-top: 10px;
+}
+.list-sale-today-index{
+	display: flex;
+}
+.list-sale-today-index li{
+	list-style: none;
+	display: flex;
+	padding: 10px 50px 10px 10px;
+	border-right: 1px solid #DDDD;
+}
+.list-sale-today-index-detail{
+	margin-left: 20px;
+}
+.list-sale-today-index .blue{
+	color: #0099FF;
+	font-size: 30px;
+}
+.list-sale-today-index .green{
+	color: green;
+	font-size: 30px;
+}
+.title_inline{
+	display: inline-table;
+}
+.about-icon{
+	padding: 5px;
+	background-color: #CCCCCC;
+	border-radius: 50%;
+	font-size: 10px;
+	color: white;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.quantity{
+	color:#0094DA;
+	font-weight: bold;
+}
+.option-sale{
+	outline: none;
+	color:#0094DA;
+	font-size: 15px;
+	font-weight: bold;
+	margin-left: 10px;
+	border:none;
+	border-bottom: 1px solid green;
+}
+.option-sale option{
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.filter-date{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.filter-date select{
+	border: none;
+	color:#0094DA;
+	font-size: 15px;
+	font-weight: bold;
+	outline: none;
+}
+.chart{
+	margin-top: 20px;
+}

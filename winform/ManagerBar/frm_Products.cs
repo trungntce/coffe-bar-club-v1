@@ -17,11 +17,19 @@ namespace ManagerBar
         {
             InitializeComponent();
             this.parentForm = parentForm;
+            guna2Button2.Click += guna2Button2_Click;
         }
-
         private void frm_Products_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            if (guna2ComboBox1.SelectedIndex != -1)
+            {
+                MessageBox.Show($"Selected item: {guna2ComboBox1.SelectedItem}");
+            }
         }
     }
 }

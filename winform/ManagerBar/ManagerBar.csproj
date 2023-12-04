@@ -40,6 +40,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -75,6 +76,12 @@
     <Compile Include="frm_OverView.Designer.cs">
       <DependentUpon>frm_OverView.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_PriceSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PriceSetting.Designer.cs">
+      <DependentUpon>frm_PriceSetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Products.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_OverView.resx">
       <DependentUpon>frm_OverView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PriceSetting.resx">
+      <DependentUpon>frm_PriceSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Products.resx">
       <DependentUpon>frm_Products.cs</DependentUpon>
@@ -375,6 +385,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -157,6 +157,9 @@
   <data name="40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vehicle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vehicle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="14" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,14 +193,14 @@
   <data name="38" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="shopping-basket" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shopping-basket.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="121" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="23" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,11 +235,11 @@
   <data name="bar-2680319_1920" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bar-2680319_1920.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="eye-solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eye-solid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,8 +247,8 @@
   <data name="41" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="34" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -253,8 +256,8 @@
   <data name="file" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="inbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\inbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -270,9 +273,6 @@
   </data>
   <data name="11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="boxes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\boxes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="inbox1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\inbox1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -334,6 +334,9 @@
   <data name="21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="import" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -349,11 +352,11 @@
   <data name="31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="boxes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boxes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reply-all" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reply-all.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -361,10 +364,10 @@
   <data name="42" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\42.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="vehicle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vehicle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reply-all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reply-all.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="import" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

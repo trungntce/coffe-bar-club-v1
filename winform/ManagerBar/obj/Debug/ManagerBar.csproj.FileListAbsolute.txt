@@ -28,3 +28,4 @@ C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\obj\Debug\Ma
 C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\obj\Debug\ManagerBar.frm_OverView.resources
 C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\obj\Debug\ManagerBar.frm_testform.resources
 C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\obj\Debug\ManagerBar.frm_Products.resources
+C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\obj\Debug\ManagerBar.frm_PriceSetting.resources

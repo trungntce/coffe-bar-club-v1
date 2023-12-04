@@ -40,7 +40,7 @@ namespace ManagerBar
 
         private void frm_Home_Load(object sender, EventArgs e)
         {
-
+            OpenChildForm(new frm_OverView(this));
         }
 
         private void tổngQuanToolStripMenuItem_Click(object sender, EventArgs e)
@@ -64,6 +64,11 @@ namespace ManagerBar
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void thiếtLậpGiáToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_PriceSetting(this));
         }
     }
 }

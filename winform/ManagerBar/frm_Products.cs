@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace ManagerBar
 {
@@ -17,19 +19,38 @@ namespace ManagerBar
         {
             InitializeComponent();
             this.parentForm = parentForm;
-            guna2Button2.Click += guna2Button2_Click;
+
         }
         private void frm_Products_Load(object sender, EventArgs e)
         {
-
+            guna2Panel_Checkbox.Visible = false;
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            if (guna2ComboBox1.SelectedIndex != -1)
+            guna2ComboBox2.DroppedDown = true;
+        }
+
+        private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //guna2Button2.Text = guna2ComboBox2.SelectedItem.ToString();
+        }
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            modal_ImportProduct modalproduct = new modal_ImportProduct();
+            modalproduct.ShowDialog();
+        }
+        private void guna2Button4_Click_1(object sender, EventArgs e)
+        {
+            if (!guna2Panel_Checkbox.Visible)
             {
-                MessageBox.Show($"Selected item: {guna2ComboBox1.SelectedItem}");
+                guna2Panel_Checkbox.Visible = true;              
+            }
+            else 
+            {
+                guna2Panel_Checkbox.Visible = false;
             }
         }
     }
 }
+

@@ -29,12 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -67,8 +64,10 @@
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ComboBox4 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -77,8 +76,8 @@
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -246,7 +245,7 @@
             // 
             this.guna2Panel2.AutoScroll = true;
             this.guna2Panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2Panel2.Controls.Add(this.chart1);
+            this.guna2Panel2.Controls.Add(this.guna2Panel6);
             this.guna2Panel2.Controls.Add(this.guna2ComboBox2);
             this.guna2Panel2.Controls.Add(this.label11);
             this.guna2Panel2.Location = new System.Drawing.Point(1, 100);
@@ -261,6 +260,7 @@
             this.guna2ComboBox2.BorderThickness = 0;
             this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox2.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
             this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
             this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -275,10 +275,10 @@
             "Tháng này",
             "Tháng trước"});
             this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(850, 4);
+            this.guna2ComboBox2.Location = new System.Drawing.Point(825, 4);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(104, 36);
+            this.guna2ComboBox2.Size = new System.Drawing.Size(129, 36);
             this.guna2ComboBox2.TabIndex = 17;
             // 
             // label11
@@ -323,10 +323,10 @@
             "Tháng này",
             "Tháng trước"});
             this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(850, 10);
+            this.guna2ComboBox3.Location = new System.Drawing.Point(825, 10);
             this.guna2ComboBox3.Name = "guna2ComboBox3";
             this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Size = new System.Drawing.Size(104, 36);
+            this.guna2ComboBox3.Size = new System.Drawing.Size(129, 36);
             this.guna2ComboBox3.TabIndex = 18;
             // 
             // label12
@@ -343,7 +343,8 @@
             // guna2Panel4
             // 
             this.guna2Panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2Panel4.Controls.Add(this.chart2);
+            this.guna2Panel4.Controls.Add(this.panel2);
+            this.guna2Panel4.Controls.Add(this.guna2ComboBox4);
             this.guna2Panel4.Controls.Add(this.guna2ComboBox1);
             this.guna2Panel4.Controls.Add(this.label13);
             this.guna2Panel4.Location = new System.Drawing.Point(1, 664);
@@ -394,7 +395,7 @@
             this.guna2Panel5.Location = new System.Drawing.Point(970, 100);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
-            this.guna2Panel5.Size = new System.Drawing.Size(231, 844);
+            this.guna2Panel5.Size = new System.Drawing.Size(231, 856);
             this.guna2Panel5.TabIndex = 3;
             // 
             // label10
@@ -441,37 +442,65 @@
             this.panel1.Size = new System.Drawing.Size(957, 10);
             this.panel1.TabIndex = 4;
             // 
+            // guna2Panel6
+            // 
+            this.guna2Panel6.AutoScroll = true;
+            this.guna2Panel6.Location = new System.Drawing.Point(0, 43);
+            this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.ShadowDecoration.Parent = this.guna2Panel6;
+            this.guna2Panel6.Size = new System.Drawing.Size(954, 233);
+            this.guna2Panel6.TabIndex = 18;
+            // 
+            // guna2ComboBox4
+            // 
+            this.guna2ComboBox4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox4.BorderThickness = 0;
+            this.guna2ComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox4.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox4.FocusedState.Parent = this.guna2ComboBox4;
+            this.guna2ComboBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.guna2ComboBox4.FormattingEnabled = true;
+            this.guna2ComboBox4.HoverState.Parent = this.guna2ComboBox4;
+            this.guna2ComboBox4.ItemHeight = 30;
+            this.guna2ComboBox4.Items.AddRange(new object[] {
+            "Hôm nay",
+            "Hôm qua",
+            "7 ngày trước",
+            "Tháng này",
+            "Tháng trước"});
+            this.guna2ComboBox4.ItemsAppearance.Parent = this.guna2ComboBox4;
+            this.guna2ComboBox4.Location = new System.Drawing.Point(825, 3);
+            this.guna2ComboBox4.Name = "guna2ComboBox4";
+            this.guna2ComboBox4.ShadowDecoration.Parent = this.guna2ComboBox4;
+            this.guna2ComboBox4.Size = new System.Drawing.Size(129, 36);
+            this.guna2ComboBox4.TabIndex = 19;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.chart1);
+            this.panel2.Location = new System.Drawing.Point(0, 42);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(954, 250);
+            this.panel2.TabIndex = 20;
+            // 
             // chart1
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart1.Legends.Add(legend6);
-            this.chart1.Location = new System.Drawing.Point(8, 33);
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart1.Legends.Add(legend4);
+            this.chart1.Location = new System.Drawing.Point(0, 1);
             this.chart1.Name = "chart1";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chart1.Series.Add(series6);
-            this.chart1.Size = new System.Drawing.Size(946, 243);
-            this.chart1.TabIndex = 18;
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart1.Series.Add(series4);
+            this.chart1.Size = new System.Drawing.Size(951, 246);
+            this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
-            // 
-            // chart2
-            // 
-            chartArea7.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chart2.Legends.Add(legend7);
-            this.chart2.Location = new System.Drawing.Point(20, 35);
-            this.chart2.Name = "chart2";
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.chart2.Series.Add(series7);
-            this.chart2.Size = new System.Drawing.Size(934, 257);
-            this.chart2.TabIndex = 17;
-            this.chart2.Text = "chart2";
             // 
             // frm_OverView
             // 
@@ -503,8 +532,8 @@
             this.guna2Panel4.PerformLayout();
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -543,7 +572,9 @@
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox4;
     }
 }

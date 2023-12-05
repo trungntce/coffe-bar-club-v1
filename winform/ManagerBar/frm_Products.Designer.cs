@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
@@ -55,16 +55,34 @@
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.gunaCheckBox1 = new Guna.UI.WinForms.GunaCheckBox();
+            this.guna2Panel_Checkbox = new Guna.UI2.WinForms.Guna2Panel();
+            this.gunaCheckBox2 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox3 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox4 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox5 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox6 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox7 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox8 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox9 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox10 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox11 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox12 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox13 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox14 = new Guna.UI.WinForms.GunaCheckBox();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.guna2Panel_Checkbox.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -275,30 +293,30 @@
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle9;
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(228, 54);
@@ -355,13 +373,14 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(882, 5);
+            this.guna2Button1.Location = new System.Drawing.Point(904, 5);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(107, 36);
             this.guna2Button1.TabIndex = 8;
             this.guna2Button1.Text = "Import";
             this.guna2Button1.TextOffset = new System.Drawing.Point(10, 0);
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button3
             // 
@@ -378,42 +397,13 @@
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(1007, 5);
+            this.guna2Button3.Location = new System.Drawing.Point(1017, 5);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
             this.guna2Button3.Size = new System.Drawing.Size(107, 36);
             this.guna2Button3.TabIndex = 10;
             this.guna2Button3.Text = "Xuất file";
             this.guna2Button3.TextOffset = new System.Drawing.Point(10, 0);
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 6;
-            this.guna2ComboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "kajhskajhskaj",
-            "alkhskaulhas",
-            "3",
-            "4",
-            "5"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(746, 6);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(130, 36);
-            this.guna2ComboBox1.TabIndex = 11;
-            this.guna2ComboBox1.Tag = "";
             // 
             // guna2Elipse3
             // 
@@ -423,6 +413,56 @@
             // 
             this.guna2Elipse4.TargetControl = this.guna2Panel5;
             // 
+            // guna2Button2
+            // 
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Image = global::ManagerBar.Properties.Resources.add;
+            this.guna2Button2.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.CustomImages.ImageSize = new System.Drawing.Size(15, 15);
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(765, 8);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(105, 31);
+            this.guna2Button2.TabIndex = 21;
+            this.guna2Button2.Text = "Xem thêm";
+            this.guna2Button2.TextOffset = new System.Drawing.Point(13, 0);
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
+            // guna2ComboBox2
+            // 
+            this.guna2ComboBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2ComboBox2.BorderRadius = 6;
+            this.guna2ComboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox2.DropDownWidth = 200;
+            this.guna2ComboBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2ComboBox2.FormattingEnabled = true;
+            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.ItemHeight = 30;
+            this.guna2ComboBox2.Items.AddRange(new object[] {
+            "Thêm hàng hóa",
+            "Thêm hàng chế biến",
+            "Thêm dịch vụ",
+            "Thêm combo đóng gói"});
+            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Location = new System.Drawing.Point(762, 5);
+            this.guna2ComboBox2.Name = "guna2ComboBox2";
+            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Size = new System.Drawing.Size(130, 36);
+            this.guna2ComboBox2.TabIndex = 20;
+            this.guna2ComboBox2.Tag = "";
+            this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
+            // 
             // guna2Button4
             // 
             this.guna2Button4.BorderColor = System.Drawing.Color.White;
@@ -431,17 +471,238 @@
             this.guna2Button4.CheckedState.Parent = this.guna2Button4;
             this.guna2Button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Button4.CustomImages.Image = global::ManagerBar.Properties.Resources.menu1;
-            this.guna2Button4.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2Button4.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button4.CustomImages.ImageSize = new System.Drawing.Size(18, 18);
             this.guna2Button4.CustomImages.Parent = this.guna2Button4;
             this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(1154, 6);
+            this.guna2Button4.Image = global::ManagerBar.Properties.Resources.down1;
+            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button4.ImageOffset = new System.Drawing.Point(-5, 0);
+            this.guna2Button4.ImageSize = new System.Drawing.Size(15, 15);
+            this.guna2Button4.Location = new System.Drawing.Point(1143, 5);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(49, 35);
-            this.guna2Button4.TabIndex = 17;
+            this.guna2Button4.Size = new System.Drawing.Size(55, 36);
+            this.guna2Button4.TabIndex = 22;
+            this.guna2Button4.TextOffset = new System.Drawing.Point(10, 0);
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click_1);
+            // 
+            // gunaCheckBox1
+            // 
+            this.gunaCheckBox1.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox1.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaCheckBox1.CheckedOnColor = System.Drawing.Color.Green;
+            this.gunaCheckBox1.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox1.Location = new System.Drawing.Point(3, 7);
+            this.gunaCheckBox1.Name = "gunaCheckBox1";
+            this.gunaCheckBox1.Size = new System.Drawing.Size(75, 20);
+            this.gunaCheckBox1.TabIndex = 15;
+            this.gunaCheckBox1.Text = "Hình ảnh";
+            // 
+            // guna2Panel_Checkbox
+            // 
+            this.guna2Panel_Checkbox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2Panel_Checkbox.Controls.Add(this.gunaCheckBox8);
+            this.guna2Panel_Checkbox.Controls.Add(this.gunaCheckBox9);
+            this.guna2Panel_Checkbox.Controls.Add(this.gunaCheckBox10);
+            this.guna2Panel_Checkbox.Controls.Add(this.gunaCheckBox11);
+            this.guna2Panel_Checkbox.Controls.Add(this.gunaCheckBox12);
+            this.guna2Panel_Checkbox.Controls.Add(this.gunaCheckBox13);
+            this.guna2Panel_Checkbox.Controls.Add(this.gunaCheckBox14);
+            this.guna2Panel_Checkbox.Controls.Add(this.gunaCheckBox7);
+            this.guna2Panel_Checkbox.Controls.Add(this.gunaCheckBox6);
+            this.guna2Panel_Checkbox.Controls.Add(this.gunaCheckBox5);
+            this.guna2Panel_Checkbox.Controls.Add(this.gunaCheckBox4);
+            this.guna2Panel_Checkbox.Controls.Add(this.gunaCheckBox3);
+            this.guna2Panel_Checkbox.Controls.Add(this.gunaCheckBox2);
+            this.guna2Panel_Checkbox.Controls.Add(this.gunaCheckBox1);
+            this.guna2Panel_Checkbox.Location = new System.Drawing.Point(916, 34);
+            this.guna2Panel_Checkbox.Name = "guna2Panel_Checkbox";
+            this.guna2Panel_Checkbox.ShadowDecoration.Parent = this.guna2Panel_Checkbox;
+            this.guna2Panel_Checkbox.Size = new System.Drawing.Size(282, 197);
+            this.guna2Panel_Checkbox.TabIndex = 23;
+            // 
+            // gunaCheckBox2
+            // 
+            this.gunaCheckBox2.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox2.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaCheckBox2.CheckedOnColor = System.Drawing.Color.Green;
+            this.gunaCheckBox2.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox2.Location = new System.Drawing.Point(3, 33);
+            this.gunaCheckBox2.Name = "gunaCheckBox2";
+            this.gunaCheckBox2.Size = new System.Drawing.Size(96, 20);
+            this.gunaCheckBox2.TabIndex = 16;
+            this.gunaCheckBox2.Text = "Mã hàng hóa";
+            // 
+            // gunaCheckBox3
+            // 
+            this.gunaCheckBox3.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox3.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaCheckBox3.CheckedOnColor = System.Drawing.Color.Green;
+            this.gunaCheckBox3.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox3.Location = new System.Drawing.Point(3, 59);
+            this.gunaCheckBox3.Name = "gunaCheckBox3";
+            this.gunaCheckBox3.Size = new System.Drawing.Size(77, 20);
+            this.gunaCheckBox3.TabIndex = 17;
+            this.gunaCheckBox3.Text = "Tên hàng";
+            // 
+            // gunaCheckBox4
+            // 
+            this.gunaCheckBox4.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox4.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaCheckBox4.CheckedOnColor = System.Drawing.Color.Green;
+            this.gunaCheckBox4.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox4.Location = new System.Drawing.Point(3, 85);
+            this.gunaCheckBox4.Name = "gunaCheckBox4";
+            this.gunaCheckBox4.Size = new System.Drawing.Size(97, 20);
+            this.gunaCheckBox4.TabIndex = 18;
+            this.gunaCheckBox4.Text = "Loại thực đơn";
+            // 
+            // gunaCheckBox5
+            // 
+            this.gunaCheckBox5.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox5.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaCheckBox5.CheckedOnColor = System.Drawing.Color.Green;
+            this.gunaCheckBox5.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox5.Location = new System.Drawing.Point(3, 111);
+            this.gunaCheckBox5.Name = "gunaCheckBox5";
+            this.gunaCheckBox5.Size = new System.Drawing.Size(88, 20);
+            this.gunaCheckBox5.TabIndex = 19;
+            this.gunaCheckBox5.Text = "Nhóm hàng";
+            // 
+            // gunaCheckBox6
+            // 
+            this.gunaCheckBox6.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox6.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaCheckBox6.CheckedOnColor = System.Drawing.Color.Green;
+            this.gunaCheckBox6.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox6.Location = new System.Drawing.Point(3, 137);
+            this.gunaCheckBox6.Name = "gunaCheckBox6";
+            this.gunaCheckBox6.Size = new System.Drawing.Size(79, 20);
+            this.gunaCheckBox6.TabIndex = 20;
+            this.gunaCheckBox6.Text = "Loại hàng";
+            // 
+            // gunaCheckBox7
+            // 
+            this.gunaCheckBox7.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox7.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaCheckBox7.CheckedOnColor = System.Drawing.Color.Green;
+            this.gunaCheckBox7.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox7.Location = new System.Drawing.Point(3, 163);
+            this.gunaCheckBox7.Name = "gunaCheckBox7";
+            this.gunaCheckBox7.Size = new System.Drawing.Size(69, 20);
+            this.gunaCheckBox7.TabIndex = 21;
+            this.gunaCheckBox7.Text = "Giá bán";
+            // 
+            // gunaCheckBox8
+            // 
+            this.gunaCheckBox8.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox8.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaCheckBox8.CheckedOnColor = System.Drawing.Color.Green;
+            this.gunaCheckBox8.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox8.Location = new System.Drawing.Point(124, 163);
+            this.gunaCheckBox8.Name = "gunaCheckBox8";
+            this.gunaCheckBox8.Size = new System.Drawing.Size(81, 20);
+            this.gunaCheckBox8.TabIndex = 28;
+            this.gunaCheckBox8.Text = "Trạng thái";
+            // 
+            // gunaCheckBox9
+            // 
+            this.gunaCheckBox9.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox9.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaCheckBox9.CheckedOnColor = System.Drawing.Color.Green;
+            this.gunaCheckBox9.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox9.Location = new System.Drawing.Point(124, 137);
+            this.gunaCheckBox9.Name = "gunaCheckBox9";
+            this.gunaCheckBox9.Size = new System.Drawing.Size(152, 20);
+            this.gunaCheckBox9.TabIndex = 27;
+            this.gunaCheckBox9.Text = "Định mức tồn nhiều nhất";
+            // 
+            // gunaCheckBox10
+            // 
+            this.gunaCheckBox10.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox10.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaCheckBox10.CheckedOnColor = System.Drawing.Color.Green;
+            this.gunaCheckBox10.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox10.Location = new System.Drawing.Point(124, 111);
+            this.gunaCheckBox10.Name = "gunaCheckBox10";
+            this.gunaCheckBox10.Size = new System.Drawing.Size(130, 20);
+            this.gunaCheckBox10.TabIndex = 26;
+            this.gunaCheckBox10.Text = "Định mức tồn ít nhất";
+            // 
+            // gunaCheckBox11
+            // 
+            this.gunaCheckBox11.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox11.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaCheckBox11.CheckedOnColor = System.Drawing.Color.Green;
+            this.gunaCheckBox11.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox11.Location = new System.Drawing.Point(124, 85);
+            this.gunaCheckBox11.Name = "gunaCheckBox11";
+            this.gunaCheckBox11.Size = new System.Drawing.Size(76, 20);
+            this.gunaCheckBox11.TabIndex = 25;
+            this.gunaCheckBox11.Text = "Đặt hàng";
+            // 
+            // gunaCheckBox12
+            // 
+            this.gunaCheckBox12.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox12.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaCheckBox12.CheckedOnColor = System.Drawing.Color.Green;
+            this.gunaCheckBox12.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox12.Location = new System.Drawing.Point(124, 59);
+            this.gunaCheckBox12.Name = "gunaCheckBox12";
+            this.gunaCheckBox12.Size = new System.Drawing.Size(52, 20);
+            this.gunaCheckBox12.TabIndex = 24;
+            this.gunaCheckBox12.Text = "Vị trí";
+            // 
+            // gunaCheckBox13
+            // 
+            this.gunaCheckBox13.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox13.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaCheckBox13.CheckedOnColor = System.Drawing.Color.Green;
+            this.gunaCheckBox13.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox13.Location = new System.Drawing.Point(124, 33);
+            this.gunaCheckBox13.Name = "gunaCheckBox13";
+            this.gunaCheckBox13.Size = new System.Drawing.Size(70, 20);
+            this.gunaCheckBox13.TabIndex = 23;
+            this.gunaCheckBox13.Text = "Tồn kho";
+            // 
+            // gunaCheckBox14
+            // 
+            this.gunaCheckBox14.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox14.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaCheckBox14.CheckedOnColor = System.Drawing.Color.Green;
+            this.gunaCheckBox14.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox14.Location = new System.Drawing.Point(124, 7);
+            this.gunaCheckBox14.Name = "gunaCheckBox14";
+            this.gunaCheckBox14.Size = new System.Drawing.Size(69, 20);
+            this.gunaCheckBox14.TabIndex = 22;
+            this.gunaCheckBox14.Text = "Giá vốn";
+            // 
+            // guna2Button5
+            // 
+            this.guna2Button5.BorderColor = System.Drawing.Color.White;
+            this.guna2Button5.BorderRadius = 6;
+            this.guna2Button5.BorderThickness = 1;
+            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
+            this.guna2Button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button5.CustomImages.Image = global::ManagerBar.Properties.Resources.import;
+            this.guna2Button5.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button5.CustomImages.ImageSize = new System.Drawing.Size(18, 18);
+            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
+            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.HoverState.Parent = this.guna2Button5;
+            this.guna2Button5.Location = new System.Drawing.Point(586, 5);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
+            this.guna2Button5.Size = new System.Drawing.Size(107, 36);
+            this.guna2Button5.TabIndex = 24;
+            this.guna2Button5.Text = "Import";
+            this.guna2Button5.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // frm_Products
             // 
@@ -450,8 +711,11 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.ClientSize = new System.Drawing.Size(1215, 611);
+            this.Controls.Add(this.guna2Button5);
+            this.Controls.Add(this.guna2Panel_Checkbox);
             this.Controls.Add(this.guna2Button4);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.guna2ComboBox2);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.label5);
@@ -472,6 +736,8 @@
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.guna2Panel_Checkbox.ResumeLayout(false);
+            this.guna2Panel_Checkbox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -502,9 +768,26 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel_Checkbox;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox8;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox9;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox10;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox11;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox12;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox13;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox14;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox7;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox6;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox5;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox4;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox3;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
     }
 }

@@ -9,16 +9,17 @@
 	<link rel="stylesheet" type="text/css" href="css/css-mobile.css">
 	<link rel="stylesheet" type="text/css" href="css/content.css">
 	<link rel="stylesheet" type="text/css" href="css/page_details.css">
+	<link rel="stylesheet" type="text/css" href="css/core.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<script src="js/main.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 	<script
-src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
-	</script>
+	src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
 </head>
 <body>
-	<div class="header">
+	<!-- <div class="header">
 		<div class="top-bar">
 			<div class="top-bar-logo">
 				<a href="#"><img src="image/logobiwicom.png"></a>
@@ -244,7 +245,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 				<span>Chi nhánh trung tâm<i class="fa-solid fa-check"></i></span>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<div class="content">
 		<div class="content-container">
 			<div class="page-left">
@@ -255,9 +256,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 				<div class="about-filter-option">
 					<div class="about-filter-option-top">
 						<span class="top-title">Loại thực đơn</span>
-						<span class="top-icon"><i class="fa-solid fa-caret-down"></i></span>
+						<span class="top-icon" aria-expanded="false" id="menu_type" onclick="hiddenType(this.id,'menuType')"><i class="fa-solid fa-caret-down"></i></span>
 					</div>
-					<div class="list-check">
+					<div class="list-check" id="menuType">
 						<div class="list-check-item">
 							<input class="check-box" type="checkbox" name=""><span>Đồ ăn</span>
 						</div>
@@ -272,9 +273,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 				<div class="about-filter-option">
 					<div class="about-filter-option-top">
 						<span class="top-title">Loại hàng</span>
-						<span class="top-icon"><i class="fa-solid fa-caret-down"></i></span>
+						<span class="top-icon" aria-expanded="false" id="sector_type" onclick="hiddenType(this.id,'sectors_type')"><i class="fa-solid fa-caret-down"></i></span>
 					</div>
-					<div class="list-check">
+					<div class="list-check" id="sectors_type">
 						<div class="list-check-item">
 							<input class="check-box" type="checkbox" name=""><span>Hàng hóa thường</span>
 						</div>
@@ -296,9 +297,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 				<div class="about-filter-option">
 					<div class="about-filter-option-top">
 						<span class="top-title">Tồn kho</span>
-						<span class="top-icon"><i class="fa-solid fa-caret-down"></i></span>
+						<span class="top-icon" aria-expanded="false" id="inventory" onclick="hiddenType(this.id,'inventories')"><i class="fa-solid fa-caret-down"></i></span>
 					</div>
-					<div class="list-check">
+					<div class="list-check" id="inventories">
 						<div class="list-check-item">
 							<input class="check-box" type="radio" name=""><span>Tất cả</span>
 						</div>
@@ -323,9 +324,9 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 				<div class="about-filter-option">
 					<div class="about-filter-option-top">
 						<span class="top-title">Lựa chọn hiển thị</span>
-						<span class="top-icon"><i class="fa-solid fa-caret-down"></i></span>
+						<span class="top-icon" aria-expanded="false" id="option_display" onclick="hiddenType(this.id,'options_display')"><i class="fa-solid fa-caret-down"></i></span>
 					</div>
-					<div class="list-check">
+					<div class="list-check" id="options_display">
 						<div class="list-check-item">
 							<input class="check-box" type="radio" name=""><span>Hàng đang kinh doanh</span>
 						</div>
@@ -366,7 +367,147 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
 							<span><i class="fa-solid fa-bars"></i></span>
 							<span><i class="fa-solid fa-caret-down"></i></span>
 						</span>
-						
+					</div>
+				</div>
+				<div class="modal-add">
+					<div class="modal-two"></div>
+					<div class="about-form-add">
+						<div class="form-add">
+							<div class="form-add-top">
+								<h4>
+									Thêm hàng hóa
+								</h4>
+								<span><i class="fa-solid fa-xmark"></i></span>
+								<div class="form-add-option">
+									<ul class="none-style style-inline nav-form-add-option">
+										<li class="form-add-list active" id="infor" onclick="tabContent('infor','tab-ct','infor-tab','form-add-list')">Thông tin</li>
+										<li id="mota" onclick="tabContent('mota','tab-ct','mota-tab','form-add-list')" class="form-add-list">Mô tả chi tiết</li>
+										<li class="form-add-list">Thành phần</li>
+										<li class="form-add-list">Nhóm thêm</li>
+										<li class="form-add-list">Chi nhánh</li>
+									</ul>
+								</div>
+							</div>
+							<div class="form-add-content">
+								<div id="infor-tab" class="form-add-content-if1 tab-ct">
+									<div class="content-if1-left">
+										<div class="about-if1-input">
+											<label>Mã hàng hóa<i class="fa-solid fa-circle-info"></i></label>
+											<input type="text" name="" placeholder="Mã hàng hóa">
+										</div>
+										<div class="about-if1-input">
+											<label>Tên hàng<i class="fa-solid fa-circle-info"></i></label>
+											<input type="text" name="" placeholder="Tên hàng">
+										</div>
+										<div class="about-if1-input">
+											<label>Loại thực đơn<i class="fa-solid fa-circle-info"></i></label>
+											<input type="text" name="" placeholder="Tên hàng">
+										</div>
+										<div class="about-if1-input">
+											<label>Nhóm hàng<i class="fa-solid fa-circle-info"></i></label>
+											<input type="text" name="" placeholder="Tên hàng">
+										</div>
+										<div class="about-if1-input">
+											<label>Vị trí<i class="fa-solid fa-circle-info"></i></label>
+											<input type="text" name="" placeholder="Tên hàng">
+										</div>
+										<div class="about-if1-input-img">
+											<img src="image/default-product.png">
+											<img src="image/default-product.png">
+											<img src="image/default-product.png">
+											<img src="image/default-product.png">
+											<img src="image/default-product.png">
+										</div>
+									</div>
+									<div class="content-if1-right">
+										<div class="about-if1-input">
+											<label>Giá vốn<i class="fa-solid fa-circle-info"></i></label>
+											<input type="text" name="" placeholder="Tên hàng">
+										</div>
+										<div class="about-if1-input">
+											<label>Giá bán</label>
+											<input type="text" name="" placeholder="Tên hàng">
+										</div>
+										<div class="about-if1-inpt">
+											<input type="checkbox" name=""> Bán trực tiếp<br>
+											<input type="checkbox" name=""> Là món thêm (Extra Topping)
+										</div>
+									</div>
+									<div class="clear"></div>
+									<div class="about-form-add-option">
+										<div class="form-add-option-bot option-about">
+											<div class="option-about-top">
+												<span>Quản lý tồn kho</span>
+												<span class="option-about-close" onclick="hiddenTag('stock')">
+													<i class="fa-solid fa-caret-down"></i>
+												</span>
+											</div>
+											<div id="stock" aria-expanded="false" class="option-about-bottom">
+												<label>Tồn kho</label><i class="fa-solid fa-circle-info"></i>
+												<input type="number" name="">
+												<span class="distance"></span>
+												<label>Ít nhất</label><i class="fa-solid fa-circle-info"></i>
+												<input type="number" name="">
+												<span class="distance"></span>
+												<label>Nhiều nhất</label><i class="fa-solid fa-circle-info"></i>
+												<input type="number" name="">
+											</div>
+										</div>
+										<div class="form-add-option-bot option-about">
+											<div class="option-about-top">
+												<span>Thuộc tính (Màu sắc, Kích thước...)</span>
+												<span onclick="hiddenTag('option-property')" class="option-about-close">
+													<i class="fa-solid fa-caret-down"></i>
+												</span>
+											</div>
+											<div id="option-property" aria-expanded="false" class="option-about-bottom">
+												<div class="list-property">
+													<div class="about-select-input">
+														<select>
+															<option style="background-color: red;">d</option>
+															<option style="background-color: green;height: 30px;">b</option>
+														</select>
+														<input type="text" name="" placeholder="Nhập giá trị thuộc tính">
+													</div>
+
+												</div>
+												<br>
+												<span class="class-button bt-no-color"><i class="fa-solid fa-plus"></i>Thêm thuộc tính</span>
+											</div>
+										</div>
+										<div class="form-add-option-bot option-about">
+											<div class="option-about-top">
+												<span>Đơn vị tính</span>
+												<span onclick="hiddenTag('unit')" class="option-about-close">
+													<i class="fa-solid fa-caret-down"></i>
+												</span>
+											</div>
+											<div id="unit" aria-expanded="false" class="option-about-bottom">
+												<label>Tồn kho</label><i class="fa-solid fa-circle-info"></i>
+												<input type="number" name="">
+												<span class="distance"></span>
+												<label>Ít nhất</label><i class="fa-solid fa-circle-info"></i>
+												<input type="number" name="">
+												<span class="distance"></span>
+												<label>Nhiều nhất</label><i class="fa-solid fa-circle-info"></i>
+												<input type="number" name="">
+											</div>
+										</div>
+									</div>
+									<div class="option-button">
+										<span class="class-button bt-green"><i class="fa-solid fa-floppy-disk"></i>Lưu</span>
+										<span class="class-button bt-green"><i class="fa-solid fa-floppy-disk"></i>Lưu & Thêm mới</span>
+										<span class="class-button bt-silver"><i class="fa-solid fa-ban"></i></i>Bỏ qua</span>
+									</div>
+								</div>
+								<div class="clear"></div>
+								<div id="mota-tab" class="form-add-content-if2 tab-ct">
+									tab2
+								</div>
+							</div>
+							
+							
+						</div>
 					</div>
 				</div>
 			</div>

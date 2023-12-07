@@ -34,7 +34,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txt_PassWord = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_UserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_Exit = new Guna.UI2.WinForms.Guna2Button();
@@ -48,12 +47,13 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -132,17 +132,6 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Tên gian hàng";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::ManagerBar.Properties.Resources.logobiwicom;
-            this.pictureBox2.Location = new System.Drawing.Point(88, 27);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(196, 37);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
             // txt_PassWord
             // 
             this.txt_PassWord.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
@@ -167,6 +156,8 @@
             this.txt_PassWord.ShadowDecoration.Parent = this.txt_PassWord;
             this.txt_PassWord.Size = new System.Drawing.Size(279, 36);
             this.txt_PassWord.TabIndex = 8;
+            this.txt_PassWord.TextChanged += new System.EventHandler(this.txt_PassWord_TextChanged);
+            this.txt_PassWord.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_PassWord_KeyDown);
             // 
             // txt_UserName
             // 
@@ -201,9 +192,12 @@
             this.btn_Exit.BorderThickness = 1;
             this.btn_Exit.CheckedState.Parent = this.btn_Exit;
             this.btn_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Exit.CustomImages.Image = global::ManagerBar.Properties.Resources.shopping_cart;
+            this.btn_Exit.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Exit.CustomImages.ImageOffset = new System.Drawing.Point(20, 0);
             this.btn_Exit.CustomImages.Parent = this.btn_Exit;
             this.btn_Exit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
-            this.btn_Exit.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Exit.ForeColor = System.Drawing.Color.White;
             this.btn_Exit.HoverState.Parent = this.btn_Exit;
             this.btn_Exit.Location = new System.Drawing.Point(195, 374);
@@ -212,6 +206,7 @@
             this.btn_Exit.Size = new System.Drawing.Size(150, 41);
             this.btn_Exit.TabIndex = 6;
             this.btn_Exit.Text = "Bán hàng";
+            this.btn_Exit.TextOffset = new System.Drawing.Point(15, 0);
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // btn_view
@@ -233,6 +228,7 @@
             this.btn_view.ShadowDecoration.Parent = this.btn_view;
             this.btn_view.Size = new System.Drawing.Size(28, 22);
             this.btn_view.TabIndex = 5;
+            this.btn_view.Click += new System.EventHandler(this.btn_view_Click);
             // 
             // label_forgotPW
             // 
@@ -276,9 +272,12 @@
             this.btn_Login.BorderThickness = 1;
             this.btn_Login.CheckedState.Parent = this.btn_Login;
             this.btn_Login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Login.CustomImages.Image = global::ManagerBar.Properties.Resources.data_analytics;
+            this.btn_Login.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_Login.CustomImages.ImageOffset = new System.Drawing.Point(20, 0);
             this.btn_Login.CustomImages.Parent = this.btn_Login;
             this.btn_Login.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btn_Login.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Login.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Login.ForeColor = System.Drawing.Color.White;
             this.btn_Login.HoverState.Parent = this.btn_Login;
             this.btn_Login.Location = new System.Drawing.Point(30, 374);
@@ -287,6 +286,7 @@
             this.btn_Login.Size = new System.Drawing.Size(150, 41);
             this.btn_Login.TabIndex = 0;
             this.btn_Login.Text = "Quản lý";
+            this.btn_Login.TextOffset = new System.Drawing.Point(10, 0);
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // guna2Elipse2
@@ -349,6 +349,22 @@
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 50;
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::ManagerBar.Properties.Resources.logobiwicom;
+            this.pictureBox2.Location = new System.Drawing.Point(88, 27);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(196, 37);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ManagerBar.Properties.Resources.bar_2680319_1920;
@@ -357,11 +373,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(840, 491);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 50;
-            this.guna2Elipse1.TargetControl = this;
             // 
             // frm_Login
             // 
@@ -374,11 +385,12 @@
             this.Name = "frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_Login";
+            this.Load += new System.EventHandler(this.frm_Login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

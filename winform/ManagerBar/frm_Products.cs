@@ -30,10 +30,14 @@ namespace ManagerBar
         {
             guna2ComboBox2.DroppedDown = true;
         }
-
+       
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //guna2Button2.Text = guna2ComboBox2.SelectedItem.ToString();
+            if(guna2ComboBox2.SelectedIndex == 0)
+            {
+                frm_AddProduct f = new frm_AddProduct();
+                f.Show();
+            }
         }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -44,12 +48,21 @@ namespace ManagerBar
         {
             if (!guna2Panel_Checkbox.Visible)
             {
-                guna2Panel_Checkbox.Visible = true;              
+                guna2Panel_Checkbox.Visible = true;
             }
-            else 
+            else
             {
                 guna2Panel_Checkbox.Visible = false;
             }
+        }
+        private void guna2TextBox1_Enter(object sender, EventArgs e)
+        {
+           Software_Functions.ChangeStateTextBox(guna2Separator2, guna2TextBox1);
+        }
+
+        private void guna2TextBox1_Leave(object sender, EventArgs e)
+        {
+            Software_Functions.ChangeStateTextBox(guna2Separator2, guna2TextBox1);
         }
     }
 }

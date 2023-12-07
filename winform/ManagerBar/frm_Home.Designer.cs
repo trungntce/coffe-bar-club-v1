@@ -38,6 +38,7 @@
             this.tàiChínhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chủĐềToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panel_childform = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -141,6 +142,7 @@
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(25, 20);
             this.guna2Button2.TabIndex = 1;
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Button1
             // 
@@ -157,6 +159,7 @@
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(25, 20);
             this.guna2Button1.TabIndex = 0;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // menuStrip1
             // 
@@ -190,12 +193,23 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2Panel2.Controls.Add(this.panel_childform);
             this.guna2Panel2.Controls.Add(this.guna2Panel3);
             this.guna2Panel2.Location = new System.Drawing.Point(-3, 39);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(1233, 610);
             this.guna2Panel2.TabIndex = 2;
+            // 
+            // panel_childform
+            // 
+            this.panel_childform.AutoScroll = true;
+            this.panel_childform.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel_childform.Location = new System.Drawing.Point(5, 41);
+            this.panel_childform.Name = "panel_childform";
+            this.panel_childform.ShadowDecoration.Parent = this.panel_childform;
+            this.panel_childform.Size = new System.Drawing.Size(1225, 569);
+            this.panel_childform.TabIndex = 1;
             // 
             // guna2Panel3
             // 
@@ -297,6 +311,7 @@
             this.tổngQuanToolStripMenuItem.Name = "tổngQuanToolStripMenuItem";
             this.tổngQuanToolStripMenuItem.Size = new System.Drawing.Size(103, 21);
             this.tổngQuanToolStripMenuItem.Text = "Tổng quan";
+            this.tổngQuanToolStripMenuItem.Click += new System.EventHandler(this.tổngQuanToolStripMenuItem_Click);
             // 
             // hàngHóaToolStripMenuItem
             // 
@@ -307,34 +322,36 @@
             this.kiểmKhoToolStripMenuItem});
             this.hàngHóaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hàngHóaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.hàngHóaToolStripMenuItem.Image = global::ManagerBar.Properties.Resources.boxes;
+            this.hàngHóaToolStripMenuItem.Image = global::ManagerBar.Properties.Resources.cube;
             this.hàngHóaToolStripMenuItem.Name = "hàngHóaToolStripMenuItem";
             this.hàngHóaToolStripMenuItem.Size = new System.Drawing.Size(96, 21);
             this.hàngHóaToolStripMenuItem.Text = "Hàng hóa";
             // 
             // danhMụcToolStripMenuItem
             // 
-            this.danhMụcToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.danhMụcToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.danhMụcToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._24;
+            this.danhMụcToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.danhMụcToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.danhMụcToolStripMenuItem.Image = global::ManagerBar.Properties.Resources.menu;
             this.danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
             this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.danhMụcToolStripMenuItem.Text = "Danh mục";
+            this.danhMụcToolStripMenuItem.Click += new System.EventHandler(this.danhMụcToolStripMenuItem_Click);
             // 
             // thiếtLậpGiáToolStripMenuItem
             // 
-            this.thiếtLậpGiáToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.thiếtLậpGiáToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.thiếtLậpGiáToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._25;
+            this.thiếtLậpGiáToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.thiếtLậpGiáToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.thiếtLậpGiáToolStripMenuItem.Image = global::ManagerBar.Properties.Resources.tags;
             this.thiếtLậpGiáToolStripMenuItem.Name = "thiếtLậpGiáToolStripMenuItem";
             this.thiếtLậpGiáToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.thiếtLậpGiáToolStripMenuItem.Text = "Thiết lập giá";
+            this.thiếtLậpGiáToolStripMenuItem.Click += new System.EventHandler(this.thiếtLậpGiáToolStripMenuItem_Click);
             // 
             // kiểmKhoToolStripMenuItem
             // 
-            this.kiểmKhoToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.kiểmKhoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.kiểmKhoToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._26;
+            this.kiểmKhoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.kiểmKhoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.kiểmKhoToolStripMenuItem.Image = global::ManagerBar.Properties.Resources.clipboard;
             this.kiểmKhoToolStripMenuItem.Name = "kiểmKhoToolStripMenuItem";
             this.kiểmKhoToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.kiểmKhoToolStripMenuItem.Text = "Kiểm kho";
@@ -366,44 +383,44 @@
             // 
             // hóaĐơnToolStripMenuItem
             // 
-            this.hóaĐơnToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.hóaĐơnToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.hóaĐơnToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._27;
+            this.hóaĐơnToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.hóaĐơnToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.hóaĐơnToolStripMenuItem.Image = global::ManagerBar.Properties.Resources.file1;
             this.hóaĐơnToolStripMenuItem.Name = "hóaĐơnToolStripMenuItem";
             this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.hóaĐơnToolStripMenuItem.Text = "Hóa đơn";
             // 
             // nhậpHàngToolStripMenuItem
             // 
-            this.nhậpHàngToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nhậpHàngToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.nhậpHàngToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._29;
+            this.nhậpHàngToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.nhậpHàngToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.nhậpHàngToolStripMenuItem.Image = global::ManagerBar.Properties.Resources.vehicle;
             this.nhậpHàngToolStripMenuItem.Name = "nhậpHàngToolStripMenuItem";
             this.nhậpHàngToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.nhậpHàngToolStripMenuItem.Text = "Trả hàng";
             // 
             // trảHàngToolStripMenuItem
             // 
-            this.trảHàngToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.trảHàngToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.trảHàngToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._30;
+            this.trảHàngToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.trảHàngToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.trảHàngToolStripMenuItem.Image = global::ManagerBar.Properties.Resources.vehicle1;
             this.trảHàngToolStripMenuItem.Name = "trảHàngToolStripMenuItem";
             this.trảHàngToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.trảHàngToolStripMenuItem.Text = "Nhập hàng";
             // 
             // trảHàngNhậpToolStripMenuItem
             // 
-            this.trảHàngNhậpToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.trảHàngNhậpToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.trảHàngNhậpToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._30;
+            this.trảHàngNhậpToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.trảHàngNhậpToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.trảHàngNhậpToolStripMenuItem.Image = global::ManagerBar.Properties.Resources.inbox1;
             this.trảHàngNhậpToolStripMenuItem.Name = "trảHàngNhậpToolStripMenuItem";
             this.trảHàngNhậpToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.trảHàngNhậpToolStripMenuItem.Text = "Trả hàng nhập";
             // 
             // xuấtHủyToolStripMenuItem
             // 
-            this.xuấtHủyToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.xuấtHủyToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.xuấtHủyToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.xuấtHủyToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.xuấtHủyToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._31;
             this.xuấtHủyToolStripMenuItem.Name = "xuấtHủyToolStripMenuItem";
             this.xuấtHủyToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
@@ -423,7 +440,7 @@
             // 
             // kháchHàngToolStripMenuItem
             // 
-            this.kháchHàngToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.kháchHàngToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.kháchHàngToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.kháchHàngToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._32;
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
@@ -432,8 +449,8 @@
             // 
             // nhàCungCấpToolStripMenuItem
             // 
-            this.nhàCungCấpToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nhàCungCấpToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.nhàCungCấpToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.nhàCungCấpToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.nhàCungCấpToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._33;
             this.nhàCungCấpToolStripMenuItem.Name = "nhàCungCấpToolStripMenuItem";
             this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
@@ -457,8 +474,8 @@
             // 
             // chấmCôngToolStripMenuItem
             // 
-            this.chấmCôngToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.chấmCôngToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.chấmCôngToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.chấmCôngToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.chấmCôngToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._191;
             this.chấmCôngToolStripMenuItem.Name = "chấmCôngToolStripMenuItem";
             this.chấmCôngToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
@@ -466,8 +483,8 @@
             // 
             // bảngTínhLươngToolStripMenuItem
             // 
-            this.bảngTínhLươngToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bảngTínhLươngToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.bảngTínhLươngToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.bảngTínhLươngToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bảngTínhLươngToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._341;
             this.bảngTínhLươngToolStripMenuItem.Name = "bảngTínhLươngToolStripMenuItem";
             this.bảngTínhLươngToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
@@ -475,8 +492,8 @@
             // 
             // bảngTínhLươngToolStripMenuItem1
             // 
-            this.bảngTínhLươngToolStripMenuItem1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bảngTínhLươngToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.bảngTínhLươngToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.bảngTínhLươngToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bảngTínhLươngToolStripMenuItem1.Image = global::ManagerBar.Properties.Resources._35;
             this.bảngTínhLươngToolStripMenuItem1.Name = "bảngTínhLươngToolStripMenuItem1";
             this.bảngTínhLươngToolStripMenuItem1.Size = new System.Drawing.Size(177, 22);
@@ -484,8 +501,8 @@
             // 
             // bảngTínhLươngToolStripMenuItem2
             // 
-            this.bảngTínhLươngToolStripMenuItem2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bảngTínhLươngToolStripMenuItem2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.bảngTínhLươngToolStripMenuItem2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.bảngTínhLươngToolStripMenuItem2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bảngTínhLươngToolStripMenuItem2.Image = global::ManagerBar.Properties.Resources._36;
             this.bảngTínhLươngToolStripMenuItem2.Name = "bảngTínhLươngToolStripMenuItem2";
             this.bảngTínhLươngToolStripMenuItem2.Size = new System.Drawing.Size(177, 22);
@@ -493,8 +510,8 @@
             // 
             // thiếtLậpChungToolStripMenuItem
             // 
-            this.thiếtLậpChungToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.thiếtLậpChungToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.thiếtLậpChungToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.thiếtLậpChungToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.thiếtLậpChungToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._37;
             this.thiếtLậpChungToolStripMenuItem.Name = "thiếtLậpChungToolStripMenuItem";
             this.thiếtLậpChungToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
@@ -539,8 +556,8 @@
             // 
             // cuốiNgàyToolStripMenuItem
             // 
-            this.cuốiNgàyToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cuốiNgàyToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.cuốiNgàyToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.cuốiNgàyToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cuốiNgàyToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._38;
             this.cuốiNgàyToolStripMenuItem.Name = "cuốiNgàyToolStripMenuItem";
             this.cuốiNgàyToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
@@ -548,8 +565,8 @@
             // 
             // bánHàngToolStripMenuItem
             // 
-            this.bánHàngToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bánHàngToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.bánHàngToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.bánHàngToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bánHàngToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._39;
             this.bánHàngToolStripMenuItem.Name = "bánHàngToolStripMenuItem";
             this.bánHàngToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
@@ -557,8 +574,8 @@
             // 
             // hàngHóaToolStripMenuItem1
             // 
-            this.hàngHóaToolStripMenuItem1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.hàngHóaToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.hàngHóaToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.hàngHóaToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.hàngHóaToolStripMenuItem1.Image = global::ManagerBar.Properties.Resources._151;
             this.hàngHóaToolStripMenuItem1.Name = "hàngHóaToolStripMenuItem1";
             this.hàngHóaToolStripMenuItem1.Size = new System.Drawing.Size(169, 22);
@@ -566,8 +583,8 @@
             // 
             // kháchHàngToolStripMenuItem1
             // 
-            this.kháchHàngToolStripMenuItem1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.kháchHàngToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.kháchHàngToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.kháchHàngToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.kháchHàngToolStripMenuItem1.Image = global::ManagerBar.Properties.Resources._18;
             this.kháchHàngToolStripMenuItem1.Name = "kháchHàngToolStripMenuItem1";
             this.kháchHàngToolStripMenuItem1.Size = new System.Drawing.Size(169, 22);
@@ -575,8 +592,8 @@
             // 
             // nhàCungCấpToolStripMenuItem1
             // 
-            this.nhàCungCấpToolStripMenuItem1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nhàCungCấpToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.nhàCungCấpToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.nhàCungCấpToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.nhàCungCấpToolStripMenuItem1.Image = global::ManagerBar.Properties.Resources._33;
             this.nhàCungCấpToolStripMenuItem1.Name = "nhàCungCấpToolStripMenuItem1";
             this.nhàCungCấpToolStripMenuItem1.Size = new System.Drawing.Size(169, 22);
@@ -584,8 +601,8 @@
             // 
             // nhânViênToolStripMenuItem1
             // 
-            this.nhânViênToolStripMenuItem1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.nhânViênToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.nhânViênToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.nhânViênToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.nhânViênToolStripMenuItem1.Image = global::ManagerBar.Properties.Resources._32;
             this.nhânViênToolStripMenuItem1.Name = "nhânViênToolStripMenuItem1";
             this.nhânViênToolStripMenuItem1.Size = new System.Drawing.Size(169, 22);
@@ -593,8 +610,8 @@
             // 
             // kênhBánHàngToolStripMenuItem
             // 
-            this.kênhBánHàngToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.kênhBánHàngToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.kênhBánHàngToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.kênhBánHàngToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.kênhBánHàngToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._40;
             this.kênhBánHàngToolStripMenuItem.Name = "kênhBánHàngToolStripMenuItem";
             this.kênhBánHàngToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
@@ -602,8 +619,8 @@
             // 
             // tàiChínhToolStripMenuItem1
             // 
-            this.tàiChínhToolStripMenuItem1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tàiChínhToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.tàiChínhToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.tàiChínhToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tàiChínhToolStripMenuItem1.Image = global::ManagerBar.Properties.Resources._41;
             this.tàiChínhToolStripMenuItem1.Name = "tàiChínhToolStripMenuItem1";
             this.tàiChínhToolStripMenuItem1.Size = new System.Drawing.Size(169, 22);
@@ -829,5 +846,6 @@
         private System.Windows.Forms.ToolStripMenuItem nhânViênToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem kênhBánHàngToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tàiChínhToolStripMenuItem1;
+        private Guna.UI2.WinForms.Guna2Panel panel_childform;
     }
 }

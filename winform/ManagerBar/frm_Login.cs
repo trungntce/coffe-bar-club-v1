@@ -19,9 +19,8 @@ namespace ManagerBar
 
         private void btn_Exit_Click(object sender, EventArgs e)
         {
-
+            
         }
-
         private void label_forgotPW_Click(object sender, EventArgs e)
         {
             frm_ForgotPassword frm_Forgotpw = new frm_ForgotPassword();
@@ -41,6 +40,16 @@ namespace ManagerBar
             {
                 Application.Exit();
             }  
+        }
+
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+            if(guna2TextBox1.Text != null && txt_PassWord.Text=="admin" && txt_UserName.Text == "admin")
+            {
+                frm_Home frmhome = new frm_Home();
+                frmhome.Show();
+                this.Hide();
+            }
         }
     }
 }

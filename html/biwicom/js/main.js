@@ -45,4 +45,48 @@ function load_form_branch(){
 }
 
 
+function hiddenType(btnID,hiddenIDs){
+	let btnToggle = document.getElementById(btnID);
+	let ariaExpanded = btnToggle.getAttribute('aria-expanded');
+	let hiddenID = document.getElementById(hiddenIDs);
+	if(ariaExpanded === 'false'){
+		hiddenID.classList.add('hidden');
+		hiddenID.classList.remove('show');
+		btnToggle.setAttribute('aria-expanded', 'true');
+	}
+	else{
+		hiddenID.classList.add('show');
+		hiddenID.classList.remove('hidden');
+		btnToggle.setAttribute('aria-expanded', 'false');
+	}
+	
+}
 
+
+
+
+function tabContent(btnID,nameClass,tabID,tablink){;
+	tabcontent = document.getElementsByClassName(nameClass);
+  	for (i = 0; i < tabcontent.length; i++) {
+    	tabcontent[i].style.display = "none";
+  	}
+  	tablinks = document.getElementsByClassName(tablink);
+  	for (i = 0; i < tablinks.length; i++) {
+    	tablinks[i].className = tablinks[i].className.replace(" active", "");
+  	}
+  	document.getElementById(tabID).style.display = "block";
+  	document.getElementById(btnID).className += " active";
+}
+
+function hiddenTag(hiddenID){
+	let btnToggle = document.getElementById(hiddenID);
+	let ariaExpanded = btnToggle.getAttribute('aria-expanded');
+	if(ariaExpanded === 'false'){
+		document.getElementById(hiddenID).style.display = "block";
+		btnToggle.setAttribute('aria-expanded', 'true');
+	}
+	else{
+		document.getElementById(hiddenID).style.display = "none";
+		btnToggle.setAttribute('aria-expanded', 'false');
+	}
+}

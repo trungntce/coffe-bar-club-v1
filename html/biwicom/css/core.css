@@ -1,0 +1,32 @@
+.class-button{
+	padding: 10px 15px 10px 15px;
+	text-align: center;
+	border-radius: 7px;
+	cursor: pointer;
+}
+.class-button i{
+	margin-right: 10px;
+}
+.bt-green{
+	background-color: #4BAC4D;
+	color: white;
+}
+.bt-green i{
+	color: white;
+}
+.bt-silver{
+	background-color: #AAAAAA;
+	color: white;
+}
+
+.bt-no-color{
+	border:1px solid #DDDD;
+	color: #252525;
+	font-style: italic;
+	font-weight: bold;
+}
+.bt-no-color i{
+	color: #252525;
+}
+
+

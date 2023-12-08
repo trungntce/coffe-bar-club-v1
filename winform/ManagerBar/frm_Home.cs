@@ -70,5 +70,10 @@ namespace ManagerBar
         {
             OpenChildForm(new frm_PriceSetting(this));
         }
+
+        private void chấmCôngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frm_Employee(this));
+        }
     }
 }

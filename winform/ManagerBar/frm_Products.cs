@@ -1,4 +1,5 @@
-﻿using Guna.UI2.WinForms;
+﻿using Guna.UI.WinForms;
+using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,10 +50,12 @@ namespace ManagerBar
             if (!guna2Panel_Checkbox.Visible)
             {
                 guna2Panel_Checkbox.Visible = true;
+                guna2Button4.Image = Properties.Resources.arrow_up;
             }
             else
             {
                 guna2Panel_Checkbox.Visible = false;
+                guna2Button4.Image = Properties.Resources.down1;
             }
         }
         private void guna2TextBox1_Enter(object sender, EventArgs e)

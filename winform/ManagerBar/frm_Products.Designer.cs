@@ -34,17 +34,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.gunaCheckBox21 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox20 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox19 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox18 = new Guna.UI.WinForms.GunaCheckBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.gunaCheckBox17 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox16 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaCheckBox15 = new Guna.UI.WinForms.GunaCheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
@@ -79,7 +77,6 @@
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
-            this.guna2Panel4.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -91,7 +88,6 @@
             this.guna2Panel1.AutoScroll = true;
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.guna2Panel1.Controls.Add(this.guna2Panel5);
-            this.guna2Panel1.Controls.Add(this.guna2Panel4);
             this.guna2Panel1.Controls.Add(this.guna2Panel3);
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
             this.guna2Panel1.Location = new System.Drawing.Point(5, 2);
@@ -103,10 +99,10 @@
             // guna2Panel5
             // 
             this.guna2Panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2Panel5.Controls.Add(this.checkBox7);
-            this.guna2Panel5.Controls.Add(this.checkBox4);
-            this.guna2Panel5.Controls.Add(this.checkBox5);
-            this.guna2Panel5.Controls.Add(this.checkBox6);
+            this.guna2Panel5.Controls.Add(this.gunaCheckBox21);
+            this.guna2Panel5.Controls.Add(this.gunaCheckBox20);
+            this.guna2Panel5.Controls.Add(this.gunaCheckBox19);
+            this.guna2Panel5.Controls.Add(this.gunaCheckBox18);
             this.guna2Panel5.Controls.Add(this.label4);
             this.guna2Panel5.Location = new System.Drawing.Point(5, 208);
             this.guna2Panel5.Name = "guna2Panel5";
@@ -114,45 +110,53 @@
             this.guna2Panel5.Size = new System.Drawing.Size(200, 125);
             this.guna2Panel5.TabIndex = 4;
             // 
-            // checkBox7
+            // gunaCheckBox21
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(11, 103);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(114, 17);
-            this.checkBox7.TabIndex = 4;
-            this.checkBox7.Text = "Combo  - Đóng gói";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.gunaCheckBox21.BaseColor = System.Drawing.Color.White;
+            this.gunaCheckBox21.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaCheckBox21.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.gunaCheckBox21.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox21.Location = new System.Drawing.Point(8, 93);
+            this.gunaCheckBox21.Name = "gunaCheckBox21";
+            this.gunaCheckBox21.Size = new System.Drawing.Size(118, 20);
+            this.gunaCheckBox21.TabIndex = 10;
+            this.gunaCheckBox21.Text = "Combo- Đóng gói";
             // 
-            // checkBox4
+            // gunaCheckBox20
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(11, 80);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(63, 17);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Dịch vụ";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.gunaCheckBox20.BaseColor = System.Drawing.Color.White;
+            this.gunaCheckBox20.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaCheckBox20.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.gunaCheckBox20.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox20.Location = new System.Drawing.Point(8, 70);
+            this.gunaCheckBox20.Name = "gunaCheckBox20";
+            this.gunaCheckBox20.Size = new System.Drawing.Size(67, 20);
+            this.gunaCheckBox20.TabIndex = 9;
+            this.gunaCheckBox20.Text = "Dịch vụ";
             // 
-            // checkBox5
+            // gunaCheckBox19
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(11, 57);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(68, 17);
-            this.checkBox5.TabIndex = 2;
-            this.checkBox5.Text = "Chế biến";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.gunaCheckBox19.BaseColor = System.Drawing.Color.White;
+            this.gunaCheckBox19.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaCheckBox19.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.gunaCheckBox19.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox19.Location = new System.Drawing.Point(8, 47);
+            this.gunaCheckBox19.Name = "gunaCheckBox19";
+            this.gunaCheckBox19.Size = new System.Drawing.Size(75, 20);
+            this.gunaCheckBox19.TabIndex = 8;
+            this.gunaCheckBox19.Text = "Chế biến";
             // 
-            // checkBox6
+            // gunaCheckBox18
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(11, 34);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(109, 17);
-            this.checkBox6.TabIndex = 1;
-            this.checkBox6.Text = "Hàng hóa thường";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.gunaCheckBox18.BaseColor = System.Drawing.Color.White;
+            this.gunaCheckBox18.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaCheckBox18.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.gunaCheckBox18.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox18.Location = new System.Drawing.Point(8, 24);
+            this.gunaCheckBox18.Name = "gunaCheckBox18";
+            this.gunaCheckBox18.Size = new System.Drawing.Size(116, 20);
+            this.gunaCheckBox18.TabIndex = 7;
+            this.gunaCheckBox18.Text = "Hàng hóa thường";
             // 
             // label4
             // 
@@ -164,32 +168,12 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Loại hàng";
             // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2Panel4.Controls.Add(this.label3);
-            this.guna2Panel4.Location = new System.Drawing.Point(5, 355);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
-            this.guna2Panel4.Size = new System.Drawing.Size(200, 127);
-            this.guna2Panel4.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(5, 5);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 16);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Loại thực đơn";
-            // 
             // guna2Panel3
             // 
             this.guna2Panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2Panel3.Controls.Add(this.checkBox3);
-            this.guna2Panel3.Controls.Add(this.checkBox2);
-            this.guna2Panel3.Controls.Add(this.checkBox1);
+            this.guna2Panel3.Controls.Add(this.gunaCheckBox17);
+            this.guna2Panel3.Controls.Add(this.gunaCheckBox16);
+            this.guna2Panel3.Controls.Add(this.gunaCheckBox15);
             this.guna2Panel3.Controls.Add(this.label2);
             this.guna2Panel3.Location = new System.Drawing.Point(3, 95);
             this.guna2Panel3.Name = "guna2Panel3";
@@ -197,35 +181,41 @@
             this.guna2Panel3.Size = new System.Drawing.Size(200, 107);
             this.guna2Panel3.TabIndex = 2;
             // 
-            // checkBox3
+            // gunaCheckBox17
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(11, 80);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(51, 17);
-            this.checkBox3.TabIndex = 3;
-            this.checkBox3.Text = "Khác";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.gunaCheckBox17.BaseColor = System.Drawing.Color.White;
+            this.gunaCheckBox17.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaCheckBox17.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.gunaCheckBox17.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox17.Location = new System.Drawing.Point(10, 71);
+            this.gunaCheckBox17.Name = "gunaCheckBox17";
+            this.gunaCheckBox17.Size = new System.Drawing.Size(55, 20);
+            this.gunaCheckBox17.TabIndex = 6;
+            this.gunaCheckBox17.Text = "Khác";
             // 
-            // checkBox2
+            // gunaCheckBox16
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(11, 57);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(67, 17);
-            this.checkBox2.TabIndex = 2;
-            this.checkBox2.Text = "Đồ uống";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.gunaCheckBox16.BaseColor = System.Drawing.Color.White;
+            this.gunaCheckBox16.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaCheckBox16.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.gunaCheckBox16.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox16.Location = new System.Drawing.Point(10, 48);
+            this.gunaCheckBox16.Name = "gunaCheckBox16";
+            this.gunaCheckBox16.Size = new System.Drawing.Size(72, 20);
+            this.gunaCheckBox16.TabIndex = 5;
+            this.gunaCheckBox16.Text = "Đồ uống";
             // 
-            // checkBox1
+            // gunaCheckBox15
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(11, 34);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(55, 17);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Đồ ăn";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.gunaCheckBox15.BaseColor = System.Drawing.Color.White;
+            this.gunaCheckBox15.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaCheckBox15.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.gunaCheckBox15.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox15.Location = new System.Drawing.Point(10, 25);
+            this.gunaCheckBox15.Name = "gunaCheckBox15";
+            this.gunaCheckBox15.Size = new System.Drawing.Size(60, 20);
+            this.gunaCheckBox15.TabIndex = 4;
+            this.gunaCheckBox15.Text = "Đồ ăn";
             // 
             // label2
             // 
@@ -416,10 +406,6 @@
             this.guna2Button3.Text = "Xuất file";
             this.guna2Button3.TextOffset = new System.Drawing.Point(10, 0);
             // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.TargetControl = this.guna2Panel4;
-            // 
             // guna2Elipse4
             // 
             this.guna2Elipse4.TargetControl = this.guna2Panel5;
@@ -476,7 +462,7 @@
             // 
             // gunaCheckBox1
             // 
-            this.gunaCheckBox1.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox1.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gunaCheckBox1.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
             this.gunaCheckBox1.CheckedOnColor = System.Drawing.Color.Green;
             this.gunaCheckBox1.FillColor = System.Drawing.Color.White;
@@ -511,7 +497,7 @@
             // 
             // gunaCheckBox8
             // 
-            this.gunaCheckBox8.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox8.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gunaCheckBox8.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
             this.gunaCheckBox8.CheckedOnColor = System.Drawing.Color.Green;
             this.gunaCheckBox8.FillColor = System.Drawing.Color.White;
@@ -523,7 +509,7 @@
             // 
             // gunaCheckBox9
             // 
-            this.gunaCheckBox9.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox9.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gunaCheckBox9.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
             this.gunaCheckBox9.CheckedOnColor = System.Drawing.Color.Green;
             this.gunaCheckBox9.FillColor = System.Drawing.Color.White;
@@ -535,7 +521,7 @@
             // 
             // gunaCheckBox10
             // 
-            this.gunaCheckBox10.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox10.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gunaCheckBox10.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
             this.gunaCheckBox10.CheckedOnColor = System.Drawing.Color.Green;
             this.gunaCheckBox10.FillColor = System.Drawing.Color.White;
@@ -547,7 +533,7 @@
             // 
             // gunaCheckBox11
             // 
-            this.gunaCheckBox11.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox11.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gunaCheckBox11.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
             this.gunaCheckBox11.CheckedOnColor = System.Drawing.Color.Green;
             this.gunaCheckBox11.FillColor = System.Drawing.Color.White;
@@ -559,7 +545,7 @@
             // 
             // gunaCheckBox12
             // 
-            this.gunaCheckBox12.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox12.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gunaCheckBox12.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
             this.gunaCheckBox12.CheckedOnColor = System.Drawing.Color.Green;
             this.gunaCheckBox12.FillColor = System.Drawing.Color.White;
@@ -571,7 +557,7 @@
             // 
             // gunaCheckBox13
             // 
-            this.gunaCheckBox13.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox13.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gunaCheckBox13.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
             this.gunaCheckBox13.CheckedOnColor = System.Drawing.Color.Green;
             this.gunaCheckBox13.FillColor = System.Drawing.Color.White;
@@ -583,7 +569,7 @@
             // 
             // gunaCheckBox14
             // 
-            this.gunaCheckBox14.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox14.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gunaCheckBox14.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
             this.gunaCheckBox14.CheckedOnColor = System.Drawing.Color.Green;
             this.gunaCheckBox14.FillColor = System.Drawing.Color.White;
@@ -595,7 +581,7 @@
             // 
             // gunaCheckBox7
             // 
-            this.gunaCheckBox7.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox7.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gunaCheckBox7.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
             this.gunaCheckBox7.CheckedOnColor = System.Drawing.Color.Green;
             this.gunaCheckBox7.FillColor = System.Drawing.Color.White;
@@ -607,7 +593,7 @@
             // 
             // gunaCheckBox6
             // 
-            this.gunaCheckBox6.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox6.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gunaCheckBox6.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
             this.gunaCheckBox6.CheckedOnColor = System.Drawing.Color.Green;
             this.gunaCheckBox6.FillColor = System.Drawing.Color.White;
@@ -619,7 +605,7 @@
             // 
             // gunaCheckBox5
             // 
-            this.gunaCheckBox5.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox5.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gunaCheckBox5.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
             this.gunaCheckBox5.CheckedOnColor = System.Drawing.Color.Green;
             this.gunaCheckBox5.FillColor = System.Drawing.Color.White;
@@ -631,7 +617,7 @@
             // 
             // gunaCheckBox4
             // 
-            this.gunaCheckBox4.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox4.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gunaCheckBox4.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
             this.gunaCheckBox4.CheckedOnColor = System.Drawing.Color.Green;
             this.gunaCheckBox4.FillColor = System.Drawing.Color.White;
@@ -643,7 +629,7 @@
             // 
             // gunaCheckBox3
             // 
-            this.gunaCheckBox3.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox3.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gunaCheckBox3.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
             this.gunaCheckBox3.CheckedOnColor = System.Drawing.Color.Green;
             this.gunaCheckBox3.FillColor = System.Drawing.Color.White;
@@ -655,7 +641,7 @@
             // 
             // gunaCheckBox2
             // 
-            this.gunaCheckBox2.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaCheckBox2.BaseColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gunaCheckBox2.CheckedOffColor = System.Drawing.SystemColors.ButtonFace;
             this.gunaCheckBox2.CheckedOnColor = System.Drawing.Color.Green;
             this.gunaCheckBox2.FillColor = System.Drawing.Color.White;
@@ -740,8 +726,6 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
-            this.guna2Panel4.ResumeLayout(false);
-            this.guna2Panel4.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
@@ -760,18 +744,9 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
@@ -801,5 +776,12 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox21;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox20;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox19;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox18;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox17;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox16;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox15;
     }
 }

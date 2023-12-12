@@ -43,6 +43,9 @@ function load_form_branch(){
 	}
 	
 }
+function load_form_add(){
+	document.getElementById("form-add-property").style.display = "block";
+}
 
 
 function hiddenType(btnID,hiddenIDs){
@@ -89,4 +92,12 @@ function hiddenTag(hiddenID){
 		document.getElementById(hiddenID).style.display = "none";
 		btnToggle.setAttribute('aria-expanded', 'false');
 	}
+}
+
+
+function close_form(closeID){
+	document.getElementById(closeID).style.display = "none";
+}
+function show_form(showID){
+	document.getElementById(showID).style.display = "block";
 }

@@ -19,7 +19,7 @@
 </script>
 </head>
 <body>
-	<!-- <div class="header">
+	<div class="header">
 		<div class="top-bar">
 			<div class="top-bar-logo">
 				<a href="#"><img src="image/logobiwicom.png"></a>
@@ -245,7 +245,7 @@
 				<span>Chi nhánh trung tâm<i class="fa-solid fa-check"></i></span>
 			</div>
 		</div>
-	</div> -->
+	</div>
 	<div class="content">
 		<div class="content-container">
 			<div class="page-left">
@@ -293,6 +293,7 @@
 				<div class="about-filter-option">
 					<h4 class="search-pages">Nhóm hàng</h4>
 					<input class="search-page-input" type="text" name="" placeholder="Theo mã hàng, tên riêng">
+					
 				</div>
 				<div class="about-filter-option">
 					<div class="about-filter-option-top">
@@ -369,7 +370,7 @@
 						</span>
 					</div>
 				</div>
-				<div class="modal-add">
+				<div class="modal-add" id="modal-add">
 					<div class="modal-two"></div>
 					<div class="about-form-add">
 						<div class="form-add">
@@ -377,7 +378,7 @@
 								<h4>
 									Thêm hàng hóa
 								</h4>
-								<span><i class="fa-solid fa-xmark"></i></span>
+								<span onclick="close_form('modal-add')"><i class="fa-solid fa-xmark"></i></span>
 								<div class="form-add-option">
 									<ul class="none-style style-inline nav-form-add-option">
 										<li class="form-add-list active" id="infor" onclick="tabContent('infor','tab-ct','infor-tab','form-add-list')">Thông tin</li>
@@ -392,23 +393,30 @@
 								<div id="infor-tab" class="form-add-content-if1 tab-ct">
 									<div class="content-if1-left">
 										<div class="about-if1-input">
-											<label>Mã hàng hóa<i class="fa-solid fa-circle-info"></i></label>
+											<label>Mã hàng hóa<span class="about-add-info"><i class="fa-solid fa-circle-info"></i><div class="content-info-add">Mã hàng hóa là thông tin duy nhất</div></span></label>
 											<input type="text" name="" placeholder="Mã hàng hóa">
 										</div>
 										<div class="about-if1-input">
-											<label>Tên hàng<i class="fa-solid fa-circle-info"></i></label>
+											<label>Tên hàng<span class="about-add-info"><i class="fa-solid fa-circle-info"></i><div class="content-info-add">Mã hàng hóa là thông tin duy nhất</div></span></label>
 											<input type="text" name="" placeholder="Tên hàng">
 										</div>
 										<div class="about-if1-input">
-											<label>Loại thực đơn<i class="fa-solid fa-circle-info"></i></label>
-											<input type="text" name="" placeholder="Tên hàng">
+											<label>Loại thực đơn<span class="about-add-info"><i class="fa-solid fa-circle-info"></i><div class="content-info-add">Mã hàng hóa là thông tin duy nhất</div></span></label>
+											<!-- <input type="text" name="" placeholder="Tên hàng"> -->
+											<select>
+												<option>Đồ ăn
+												</option>
+												<option>Đồ uống</option>
+											</select>
 										</div>
 										<div class="about-if1-input">
-											<label>Nhóm hàng<i class="fa-solid fa-circle-info"></i></label>
-											<input type="text" name="" placeholder="Tên hàng">
+											<label>Nhóm hàng<span class="about-add-info"><i class="fa-solid fa-circle-info"></i><div class="content-info-add">Mã hàng hóa là thông tin duy nhất</div></span></label>
+											<select>
+												<option>Vitamin</option>
+											</select><span class="add-form" onclick="load_form_add()"><i class="fa-solid fa-plus"></i></span>
 										</div>
 										<div class="about-if1-input">
-											<label>Vị trí<i class="fa-solid fa-circle-info"></i></label>
+											<label>Vị trí<span class="about-add-info"><i class="fa-solid fa-circle-info"></i><div class="content-info-add">Mã hàng hóa là thông tin duy nhất</div></span></label>
 											<input type="text" name="" placeholder="Tên hàng">
 										</div>
 										<div class="about-if1-input-img">
@@ -421,7 +429,7 @@
 									</div>
 									<div class="content-if1-right">
 										<div class="about-if1-input">
-											<label>Giá vốn<i class="fa-solid fa-circle-info"></i></label>
+											<label>Giá vốn<span class="about-add-info"><i class="fa-solid fa-circle-info"></i><div class="content-info-add">Mã hàng hóa là thông tin duy nhất</div></span></label>
 											<input type="text" name="" placeholder="Tên hàng">
 										</div>
 										<div class="about-if1-input">
@@ -429,8 +437,8 @@
 											<input type="text" name="" placeholder="Tên hàng">
 										</div>
 										<div class="about-if1-inpt">
-											<input type="checkbox" name=""> Bán trực tiếp<br>
-											<input type="checkbox" name=""> Là món thêm (Extra Topping)
+											<input type="checkbox" name=""> Bán trực tiếp<span class="about-add-info"><i class="fa-solid fa-circle-info"></i><div class="content-info-add">Mã hàng hóa là thông tin duy nhất</div></span><br>
+											<input type="checkbox" name=""> Là món thêm (Extra Topping)<span class="about-add-info"><i class="fa-solid fa-circle-info"></i><div class="content-info-add">Mã hàng hóa là thông tin duy nhất</div></span>
 										</div>
 									</div>
 									<div class="clear"></div>
@@ -509,6 +517,59 @@
 							
 						</div>
 					</div>
+				</div>
+				<div id="form-add-property" class="form-add-property">
+					<div class="modal"></div>
+					<div class="form-add-pro-about">
+						<div class="form-add-pro">
+							<h4>Thêm nhóm hàng</h4>
+							<div class="add-pro-input">
+								<label>Tên nhóm</label>
+								<input type="text" placeholder="Tên nhóm hàng" name="">
+							</div>
+							<div class="add-pro-input">
+								<label>Nhóm cha</label>
+								<input type="text" placeholder="Tên nhóm hàng" name="">
+							</div>
+							<div class="add-pro-button">
+								<span class="class-button bt-green"><i class="fa-solid fa-floppy-disk"></i>Lưu</span>
+								<span class="class-button bt-silver"><i class="fa-solid fa-floppy-disk"></i>Bỏ qua</span>
+							</div>
+							<span class="close-form" onclick="close_form('form-add-property')">
+								<i class="fa-solid fa-xmark"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="page-table">
+					<table class="table-class">
+						<thead>
+							<tr>
+								<td><input type="checkbox" name=""></td>
+								<td><i class="fa-regular fa-star"></i></td>
+								<td>Mã hàng hóa</td>
+								<td>Tên hàng</td>
+								<td>Loại thực đơn</td>
+								<td>Giá bán</td>
+								<td>Giá vốn</td>
+								<td>Tồn kho</td>
+								<td>Đặt hàng</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" name=""></td>
+								<td><i class="fa-regular fa-star"></i></td>
+								<td>SP002</td>
+								<td>Bàn số 1</td>
+								<td>Khác</td>
+								<td>0</td>
+								<td>6.000.000</td>
+								<td>9.000</td>
+								<td>0</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>

@@ -33,3 +33,4 @@ C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\obj\Debug\Ma
 C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\bin\Debug\Guna.UI.dll
 C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\obj\Debug\ManagerBar.frm_AddProduct.resources
 C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\obj\Debug\ManagerBar.frm_Employee.resources
+C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\obj\Debug\ManagerBar.frm_AddEmployee.resources

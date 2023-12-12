@@ -426,7 +426,7 @@
             this.báoCáoToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(6, 7);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(957, 25);
+            this.menuStrip2.Size = new System.Drawing.Size(837, 25);
             this.menuStrip2.TabIndex = 4;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -572,7 +572,7 @@
             this.kháchHàngToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
             this.kháchHàngToolStripMenuItem.Image = global::ManagerBar.Properties.Resources.user1;
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.kháchHàngToolStripMenuItem.Text = "Khách hàng";
             // 
             // nhàCungCấpToolStripMenuItem
@@ -581,7 +581,7 @@
             this.nhàCungCấpToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.nhàCungCấpToolStripMenuItem.Image = global::ManagerBar.Properties.Resources.group;
             this.nhàCungCấpToolStripMenuItem.Name = "nhàCungCấpToolStripMenuItem";
-            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nhàCungCấpToolStripMenuItem.Text = "Nhà cung cấp";
             // 
             // nhânViênToolStripMenuItem
@@ -606,7 +606,7 @@
             this.chấmCôngToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.chấmCôngToolStripMenuItem.Image = global::ManagerBar.Properties.Resources.group__1_;
             this.chấmCôngToolStripMenuItem.Name = "chấmCôngToolStripMenuItem";
-            this.chấmCôngToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.chấmCôngToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.chấmCôngToolStripMenuItem.Text = "Nhân viên";
             this.chấmCôngToolStripMenuItem.Click += new System.EventHandler(this.chấmCôngToolStripMenuItem_Click);
             // 
@@ -616,7 +616,7 @@
             this.bảngTínhLươngToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bảngTínhLươngToolStripMenuItem.Image = global::ManagerBar.Properties.Resources.calendar1;
             this.bảngTínhLươngToolStripMenuItem.Name = "bảngTínhLươngToolStripMenuItem";
-            this.bảngTínhLươngToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bảngTínhLươngToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.bảngTínhLươngToolStripMenuItem.Text = "Chấm công";
             // 
             // bảngTínhLươngToolStripMenuItem1
@@ -625,7 +625,7 @@
             this.bảngTínhLươngToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bảngTínhLươngToolStripMenuItem1.Image = global::ManagerBar.Properties.Resources.coins;
             this.bảngTínhLươngToolStripMenuItem1.Name = "bảngTínhLươngToolStripMenuItem1";
-            this.bảngTínhLươngToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.bảngTínhLươngToolStripMenuItem1.Size = new System.Drawing.Size(177, 22);
             this.bảngTínhLươngToolStripMenuItem1.Text = "Bảng tính lương";
             // 
             // bảngTínhLươngToolStripMenuItem2
@@ -634,7 +634,7 @@
             this.bảngTínhLươngToolStripMenuItem2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bảngTínhLươngToolStripMenuItem2.Image = global::ManagerBar.Properties.Resources.settings;
             this.bảngTínhLươngToolStripMenuItem2.Name = "bảngTínhLươngToolStripMenuItem2";
-            this.bảngTínhLươngToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.bảngTínhLươngToolStripMenuItem2.Size = new System.Drawing.Size(177, 22);
             this.bảngTínhLươngToolStripMenuItem2.Text = "Bảng hoa hồng";
             // 
             // thiếtLậpChungToolStripMenuItem
@@ -643,7 +643,7 @@
             this.thiếtLậpChungToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.thiếtLậpChungToolStripMenuItem.Image = global::ManagerBar.Properties.Resources._37;
             this.thiếtLậpChungToolStripMenuItem.Name = "thiếtLậpChungToolStripMenuItem";
-            this.thiếtLậpChungToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thiếtLậpChungToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.thiếtLậpChungToolStripMenuItem.Text = "Thiết lập chung";
             // 
             // websiteToolStripMenuItem

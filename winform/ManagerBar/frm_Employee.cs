@@ -74,25 +74,100 @@ namespace ManagerBar
         {
             Software_Functions.ChangeStateComboBox(guna2Separator1, guna2ComboBox3);
         }
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+            guna2ComboBox1.DroppedDown = true;
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            guna2ComboBox3.DroppedDown = true;
+        }
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            if (!guna2Panel_Checkbox.Visible)
+            {
+                guna2Panel_Checkbox.Visible = true;
+                guna2Button4.Image = Properties.Resources.arrow_up;
+            }
+            else
+            {
+                guna2Panel_Checkbox.Visible = false;
+                guna2Button4.Image = Properties.Resources.down1;
+            }
+        }
+        private frm_AddEmployee frm_addEmployee;
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            if (frm_addEmployee != null && !frm_addEmployee.IsDisposed)
+            {
+                frm_addEmployee.Close();
+            }
+            else
+            {
+                frm_addEmployee = new frm_AddEmployee();
+                frm_addEmployee.Show();
+            }
+        }
+        private void frm_Employee_Load(object sender, EventArgs e)
+        {
+            guna2Panel_Checkbox.Visible = false;
+            guna2Panel4.Visible = false;
+        }
+
+        private void guna2TextBox4_Enter(object sender, EventArgs e)
+        {
+            Software_Functions.ChangeStateTextBox(guna2Separator7, guna2TextBox4);
+        }
+
+        private void guna2TextBox4_Leave(object sender, EventArgs e)
+        {
+            Software_Functions.ChangeStateTextBox(guna2Separator7, guna2TextBox4);
+        }
 
         private void guna2TextBox1_Enter(object sender, EventArgs e)
         {
-            Software_Functions.ChangeStateComboBox(guna2Separator2, guna2ComboBox1);
+            Software_Functions.ChangeStateTextBox(guna2Separator3, guna2TextBox1);
         }
 
         private void guna2TextBox1_Leave(object sender, EventArgs e)
         {
-            Software_Functions.ChangeStateComboBox(guna2Separator2, guna2ComboBox1);
+            Software_Functions.ChangeStateTextBox(guna2Separator3, guna2TextBox1);
         }
 
-        private void guna2Separator4_Enter(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            guna2Panel4.Visible = false; 
         }
 
-        private void guna2Separator4_Leave(object sender, EventArgs e)
+        private void guna2Button7_Click(object sender, EventArgs e)
         {
+            guna2Panel4.Visible = false;
+        }
 
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+            guna2Panel4.Visible = true;
+        }
+
+        private void guna2TextBox5_Enter(object sender, EventArgs e)
+        {
+            Software_Functions.ChangeStateTextBox(guna2Separator5, guna2TextBox5);
+        }
+
+        private void guna2TextBox5_Leave(object sender, EventArgs e)
+        {
+            Software_Functions.ChangeStateTextBox(guna2Separator5, guna2TextBox5);
+        }
+
+        private void guna2TextBox3_Enter(object sender, EventArgs e)
+        {
+            Software_Functions.ChangeStateTextBox(guna2Separator4, guna2TextBox3);
+        }
+
+        private void guna2TextBox3_Leave(object sender, EventArgs e)
+        {
+            Software_Functions.ChangeStateTextBox(guna2Separator4, guna2TextBox3);
         }
     }
 }

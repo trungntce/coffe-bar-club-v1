@@ -43,16 +43,16 @@
             this.guna2RadioButton4 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btn_choosefiledataProduct = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
@@ -242,44 +242,37 @@
             this.guna2Panel1.Size = new System.Drawing.Size(503, 153);
             this.guna2Panel1.TabIndex = 13;
             // 
-            // guna2Elipse2
+            // label12
             // 
-            this.guna2Elipse2.BorderRadius = 12;
-            this.guna2Elipse2.TargetControl = this.guna2Panel1;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(94)))), ((int)(((byte)(42)))));
+            this.label12.Location = new System.Drawing.Point(37, 10);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(48, 18);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "Lưu ý";
             // 
-            // label7
+            // pictureBox1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(94)))), ((int)(((byte)(42)))));
-            this.label7.Location = new System.Drawing.Point(8, 33);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(366, 16);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Hệ thống cho phép nhập tối đa 5.000 mặt hàng mỗi lần từ file .";
+            this.pictureBox1.Image = global::ManagerBar.Properties.Resources.warning;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(18, 18);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
-            // label8
+            // label11
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(94)))), ((int)(((byte)(42)))));
-            this.label8.Location = new System.Drawing.Point(8, 62);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(465, 16);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Mã hàng chứa kí tự đặc biệt (@, #, $, *, /, -, _,...) và chữ có dấu sẽ gây khó kh" +
-    "ăn ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(94)))), ((int)(((byte)(42)))));
-            this.label9.Location = new System.Drawing.Point(8, 78);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(162, 16);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "khi In và sử dụng mã vạch.";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(94)))), ((int)(((byte)(42)))));
+            this.label11.Location = new System.Drawing.Point(8, 122);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(197, 16);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "trên file excel (không lưu trữ ảnh).";
             // 
             // label10
             // 
@@ -293,27 +286,44 @@
             this.label10.Text = "Với hình ảnh hàng hóa, hệ thống sẽ lưu trữ và hiển thị theo link hình ảnh được nh" +
     "ập";
             // 
-            // label11
+            // label9
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(94)))), ((int)(((byte)(42)))));
-            this.label11.Location = new System.Drawing.Point(8, 122);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(197, 16);
-            this.label11.TabIndex = 9;
-            this.label11.Text = "trên file excel (không lưu trữ ảnh).";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(94)))), ((int)(((byte)(42)))));
+            this.label9.Location = new System.Drawing.Point(8, 78);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(162, 16);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "khi In và sử dụng mã vạch.";
             // 
-            // label12
+            // label8
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(94)))), ((int)(((byte)(42)))));
-            this.label12.Location = new System.Drawing.Point(37, 10);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(48, 18);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "Lưu ý";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(94)))), ((int)(((byte)(42)))));
+            this.label8.Location = new System.Drawing.Point(8, 62);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(465, 16);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "Mã hàng chứa kí tự đặc biệt (@, #, $, *, /, -, _,...) và chữ có dấu sẽ gây khó kh" +
+    "ăn ";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(94)))), ((int)(((byte)(42)))));
+            this.label7.Location = new System.Drawing.Point(8, 33);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(366, 16);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Hệ thống cho phép nhập tối đa 5.000 mặt hàng mỗi lần từ file .";
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 12;
+            this.guna2Elipse2.TargetControl = this.guna2Panel1;
             // 
             // btn_choosefiledataProduct
             // 
@@ -354,16 +364,6 @@
             this.guna2Button1.Size = new System.Drawing.Size(20, 19);
             this.guna2Button1.TabIndex = 15;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ManagerBar.Properties.Resources.warning;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(18, 18);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
             // 
             // guna2Panel2
             // 

@@ -37,13 +37,13 @@
             this.btn_Exit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_Login = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_UserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn_Login = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
@@ -164,36 +164,6 @@
             this.panel1.Size = new System.Drawing.Size(373, 348);
             this.panel1.TabIndex = 2;
             // 
-            // btn_Login
-            // 
-            this.btn_Login.BorderColor = System.Drawing.Color.White;
-            this.btn_Login.BorderRadius = 12;
-            this.btn_Login.BorderThickness = 1;
-            this.btn_Login.CheckedState.Parent = this.btn_Login;
-            this.btn_Login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Login.CustomImages.Parent = this.btn_Login;
-            this.btn_Login.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.btn_Login.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Login.ForeColor = System.Drawing.Color.White;
-            this.btn_Login.HoverState.Parent = this.btn_Login;
-            this.btn_Login.Location = new System.Drawing.Point(191, 270);
-            this.btn_Login.Name = "btn_Login";
-            this.btn_Login.ShadowDecoration.Parent = this.btn_Login;
-            this.btn_Login.Size = new System.Drawing.Size(150, 41);
-            this.btn_Login.TabIndex = 0;
-            this.btn_Login.Text = "Lấy lại mật khẩu";
-            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 50;
-            this.guna2Elipse2.TargetControl = this.guna2Panel1;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.BorderRadius = 50;
-            this.guna2Elipse3.TargetControl = this.panel1;
-            // 
             // guna2TextBox1
             // 
             this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
@@ -267,6 +237,36 @@
             this.label2.Size = new System.Drawing.Size(111, 16);
             this.label2.TabIndex = 13;
             this.label2.Text = "Tên đăng nhập";
+            // 
+            // btn_Login
+            // 
+            this.btn_Login.BorderColor = System.Drawing.Color.White;
+            this.btn_Login.BorderRadius = 12;
+            this.btn_Login.BorderThickness = 1;
+            this.btn_Login.CheckedState.Parent = this.btn_Login;
+            this.btn_Login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Login.CustomImages.Parent = this.btn_Login;
+            this.btn_Login.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.btn_Login.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Login.ForeColor = System.Drawing.Color.White;
+            this.btn_Login.HoverState.Parent = this.btn_Login;
+            this.btn_Login.Location = new System.Drawing.Point(192, 270);
+            this.btn_Login.Name = "btn_Login";
+            this.btn_Login.ShadowDecoration.Parent = this.btn_Login;
+            this.btn_Login.Size = new System.Drawing.Size(150, 41);
+            this.btn_Login.TabIndex = 0;
+            this.btn_Login.Text = "Lấy lại mật khẩu";
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 50;
+            this.guna2Elipse2.TargetControl = this.guna2Panel1;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 50;
+            this.guna2Elipse3.TargetControl = this.panel1;
             // 
             // pictureBox2
             // 

@@ -41,7 +41,6 @@ namespace ManagerBar
                 Application.Exit();
             }  
         }
-
         private void btn_Login_Click(object sender, EventArgs e)
         {
             if(guna2TextBox1.Text != null && txt_PassWord.Text=="admin" && txt_UserName.Text == "admin")
@@ -50,6 +49,43 @@ namespace ManagerBar
                 frmhome.Show();
                 this.Hide();
             }
+        }
+
+        private void txt_PassWord_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_Login.PerformClick();
+            }
+        }
+
+        private void txt_PassWord_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_PassWord.Text))
+            {
+                btn_view.Visible = false;
+            }
+            else
+            {
+                btn_view.Visible = true;
+            }
+        }
+
+        private void btn_view_Click(object sender, EventArgs e)
+        {
+            if (txt_PassWord.PasswordChar == '\0')
+            {
+                txt_PassWord.PasswordChar = '*';
+            }
+            else
+            {
+                txt_PassWord.PasswordChar = '\0';
+            }
+        }
+
+        private void frm_Login_Load(object sender, EventArgs e)
+        {
+            btn_view.Visible = false;
         }
     }
 }

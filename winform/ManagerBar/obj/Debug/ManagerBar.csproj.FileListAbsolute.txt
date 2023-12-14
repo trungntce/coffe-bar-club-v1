@@ -34,3 +34,5 @@ C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\bin\Debug\Gu
 C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\obj\Debug\ManagerBar.frm_AddProduct.resources
 C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\obj\Debug\ManagerBar.frm_Employee.resources
 C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\obj\Debug\ManagerBar.frm_AddEmployee.resources
+C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ad\Desktop\ManagerBar\coffe-bar-club-v1\winform\ManagerBar\bin\Debug\Newtonsoft.Json.xml

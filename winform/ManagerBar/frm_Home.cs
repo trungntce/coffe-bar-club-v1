@@ -25,8 +25,8 @@ namespace ManagerBar
                 currentFormChild.Close();
             }
             currentFormChild = childform;
-            childform.TopLevel = false;
             childform.FormBorderStyle = FormBorderStyle.None;
+            childform.TopLevel = false;
             childform.Dock = DockStyle.Fill;
             panel_childform.Controls.Add(childform);
             panel_childform.Tag = childform;

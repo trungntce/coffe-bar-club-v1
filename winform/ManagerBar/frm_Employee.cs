@@ -113,6 +113,7 @@ namespace ManagerBar
         {
             guna2Panel_Checkbox.Visible = false;
             guna2Panel4.Visible = false;
+            AddTemporaryData();
         }
 
         private void guna2TextBox4_Enter(object sender, EventArgs e)
@@ -137,7 +138,7 @@ namespace ManagerBar
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            guna2Panel4.Visible = false; 
+            guna2Panel4.Visible = false;
         }
 
         private void guna2Button7_Click(object sender, EventArgs e)
@@ -169,5 +170,22 @@ namespace ManagerBar
         {
             Software_Functions.ChangeStateTextBox(guna2Separator4, guna2TextBox3);
         }
+
+        List<listAPI> temporaryData = new List<listAPI>();
+        private void AddTemporaryData()
+        {
+            listAPI employee = new listAPI
+            {
+                Name = "John Doe",
+                Age = 30,
+                Department = "IT"
+            };
+            temporaryData.Add(employee);
+
+            guna2DataGridView1.DataSource = null;
+            guna2DataGridView1.DataSource = temporaryData;
+            guna2DataGridView1.Visible = true;
+        }
+
     }
 }

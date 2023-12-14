@@ -32,6 +32,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -107,7 +108,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -115,8 +115,12 @@
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -126,7 +130,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -165,6 +170,16 @@
             this.tabPage1.Size = new System.Drawing.Size(762, 771);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Thông tin";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(116, 111);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // guna2Button2
             // 
@@ -227,6 +242,9 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel5.Controls.Add(this.listBox1);
+            this.panel5.Controls.Add(this.guna2PictureBox2);
+            this.panel5.Controls.Add(this.guna2PictureBox1);
             this.panel5.Controls.Add(this.guna2Separator14);
             this.panel5.Controls.Add(this.guna2TextBox7);
             this.panel5.Controls.Add(this.guna2Separator10);
@@ -308,11 +326,12 @@
             this.guna2TextBox10.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox10.Name = "guna2TextBox10";
             this.guna2TextBox10.PasswordChar = '\0';
-            this.guna2TextBox10.PlaceholderText = "";
+            this.guna2TextBox10.PlaceholderText = "Chọn Phường/Xã";
             this.guna2TextBox10.SelectedText = "";
             this.guna2TextBox10.ShadowDecoration.Parent = this.guna2TextBox10;
             this.guna2TextBox10.Size = new System.Drawing.Size(190, 23);
             this.guna2TextBox10.TabIndex = 73;
+            this.guna2TextBox10.TextOffset = new System.Drawing.Point(10, 0);
             this.guna2TextBox10.Enter += new System.EventHandler(this.guna2TextBox10_Enter);
             this.guna2TextBox10.Leave += new System.EventHandler(this.guna2TextBox10_Leave);
             // 
@@ -342,11 +361,13 @@
             this.guna2TextBox11.Margin = new System.Windows.Forms.Padding(5);
             this.guna2TextBox11.Name = "guna2TextBox11";
             this.guna2TextBox11.PasswordChar = '\0';
-            this.guna2TextBox11.PlaceholderText = "";
+            this.guna2TextBox11.PlaceholderText = "Chọn tỉnh/TP - Quận/Huyện";
             this.guna2TextBox11.SelectedText = "";
             this.guna2TextBox11.ShadowDecoration.Parent = this.guna2TextBox11;
             this.guna2TextBox11.Size = new System.Drawing.Size(190, 23);
             this.guna2TextBox11.TabIndex = 71;
+            this.guna2TextBox11.TextOffset = new System.Drawing.Point(10, 0);
+            this.guna2TextBox11.TextChanged += new System.EventHandler(this.guna2TextBox11_TextChanged);
             this.guna2TextBox11.Enter += new System.EventHandler(this.guna2TextBox11_Enter);
             this.guna2TextBox11.Leave += new System.EventHandler(this.guna2TextBox11_Leave);
             // 
@@ -744,7 +765,7 @@
             // 
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = global::ManagerBar.Properties.Resources.add__1_;
-            this.pictureBox4.Location = new System.Drawing.Point(591, 34);
+            this.pictureBox4.Location = new System.Drawing.Point(591, 35);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(13, 11);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -784,7 +805,7 @@
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::ManagerBar.Properties.Resources.add__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(590, 81);
+            this.pictureBox3.Location = new System.Drawing.Point(590, 78);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(13, 11);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1307,16 +1328,6 @@
             this.guna2Button3.Text = "Chọn ảnh";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 111);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -1372,6 +1383,40 @@
             this.guna2Elipse5.BorderRadius = 20;
             this.guna2Elipse5.TargetControl = this.panel5;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::ManagerBar.Properties.Resources.search1;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(369, 32);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(15, 23);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 77;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Image = global::ManagerBar.Properties.Resources.search1;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(369, 67);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(15, 23);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 78;
+            this.guna2PictureBox2.TabStop = false;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(386, 59);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(180, 69);
+            this.listBox1.TabIndex = 71;
+            // 
             // frm_AddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1389,6 +1434,7 @@
             this.Load += new System.EventHandler(this.frm_AddEmployee_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
@@ -1402,7 +1448,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1496,5 +1543,8 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label26;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

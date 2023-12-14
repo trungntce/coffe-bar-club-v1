@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Drawing;
 using System.Globalization;
+using System.Net.Http;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ManagerBar
@@ -261,16 +264,23 @@ namespace ManagerBar
         }
         private void label16_Click(object sender, EventArgs e)
         {
-            guna2ComboBox2.DroppedDown = true;
+            /*guna2ComboBox2.DroppedDown = true;*/
         }
 
         private void label17_Click(object sender, EventArgs e)
         {
-            guna2ComboBox1.DroppedDown = true;
+          /*  guna2ComboBox1.DroppedDown = true;*/
         }
         private void pictureBox4_Click(object sender, EventArgs e)
         {
 
         }
+        private void guna2TextBox11_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
+
+

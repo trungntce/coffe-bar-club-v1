@@ -225,15 +225,16 @@ namespace ManagerBar
         }
         private void frm_AddProduct_Load(object sender, EventArgs e)
         {
+            heightPanel3 = guna2Panel3.Height;
+            guna2Panel3.Height = 31;
+            guna2Panel3.Location = new Point(4, 300);
             guna2Panel_AddgroupProduct.Visible = false;
             guna2Panel_Location.Visible = false;
             guna2Panel2.Visible = false;
             guna2Panel4.Visible = false;
             originalPanel1Height = guna2Panel1.Height;
 
-            heightPanel3 = guna2Panel3.Height;
-            guna2Panel3.Height = 31;
-            guna2Panel3.Location = new Point(4, 300);
+            
             SetUpTooltip();
 
         }

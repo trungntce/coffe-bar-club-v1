@@ -34,20 +34,20 @@ namespace ManagerBar
        
         private void guna2ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(guna2ComboBox2.SelectedIndex == 0)
+          /*  if(guna2ComboBox2.SelectedIndex == 0)
             {
                 frm_AddProduct f = new frm_AddProduct();
                 f.Show();
-            }
+            }*/
         }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            modal_ImportProduct modalproduct = new modal_ImportProduct();
-            modalproduct.ShowDialog();
+           /* modal_ImportProduct modalproduct = new modal_ImportProduct();
+            modalproduct.ShowDialog();*/
         }
         private void guna2Button4_Click_1(object sender, EventArgs e)
         {
-            if (!guna2Panel_Checkbox.Visible)
+           /* if (!guna2Panel_Checkbox.Visible)
             {
                 guna2Panel_Checkbox.Visible = true;
                 guna2Button4.Image = Properties.Resources.arrow_up;
@@ -56,16 +56,16 @@ namespace ManagerBar
             {
                 guna2Panel_Checkbox.Visible = false;
                 guna2Button4.Image = Properties.Resources.down1;
-            }
+            }*/
         }
         private void guna2TextBox1_Enter(object sender, EventArgs e)
         {
-           Software_Functions.ChangeStateTextBox(guna2Separator2, guna2TextBox1);
+          /* Software_Functions.ChangeStateTextBox(guna2Separator2, guna2TextBox1);*/
         }
 
         private void guna2TextBox1_Leave(object sender, EventArgs e)
         {
-            Software_Functions.ChangeStateTextBox(guna2Separator2, guna2TextBox1);
+          /* Software_Functions.ChangeStateTextBox(guna2Separator2, guna2TextBox1);*/
         }
     }
 }
